@@ -1,4 +1,4 @@
-# Augmentation Patterns
+# Augmentation Patterns (DRAFT)
 
 While a VR/3D designer is placing virtual objects using positions in a controlled world coordinate system, 
 an AR content creator primarily specifies object placement intents relative to appearing anchors, 
