@@ -44,7 +44,7 @@ A sequence of timed reactions as an example:
 > stop AR session ◾
 
 ## Conditional Reaction Pattern
-| on:change	| if:items.@count >= 1	| do:say | 
+| on:change	| if:`items.@count >= 1	`| do:say | 
 |---|---|---|
 > "Conditional Reaction Pattern" 🗣
 
@@ -98,7 +98,7 @@ Temporally controlled repetition:
 
 Continuous query as repeated evaluation on each state change:
 
-| stated	| if:function('red.box.id', 'proximity') < 1.2	| do:execute | 
+| stated	| if:`function('red.box.id', 'proximity') < 1.2`	| do:execute | 
 |---|---|---|
 > function('https://___', 'getJSON') ◀
 
@@ -107,11 +107,11 @@ Continuous query as repeated evaluation on each state change:
 |---|---|---|
 > red.box ➕
 
-| on:altered	| if:function('red.box', 'visible') == true	| do:say | 
+| on:altered	| if:`function('red.box', 'visible') == true`	| do:say | 
 |---|---|---|
 > "you see box" 🗣
 
-| on:altered	| if:function('red.box', 'visible') == false	| do:say | 
+| on:altered	| if:`function('red.box', 'visible') == false`	| do:say | 
 |---|---|---|
 > "now you don't" 🗣
 
@@ -131,7 +131,7 @@ Some detectors stop after capturing a first occurence of the depicted entity and
 |---|---|---|
 > detected.feature.chair ➕
 
-| on:altered	| if:function('detected.feature.chair', 'visible') == false	| do:redetect | 
+| on:altered	| if:`function('detected.feature.chair', 'visible') == false`	| do:redetect | 
 |---|---|---|
 > detected.feature.chair
 
