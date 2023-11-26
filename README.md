@@ -1,6 +1,9 @@
 # AR Patterns Catalog
-Catalog of AR Patterns: Event-driven Design Patterns in Creating Augmented Reality Experiences
 
+**Catalog of AR Patterns: Event-driven Design Patterns in Creating Augmented Reality Experiences**
+
+> **Hint**: Work in prgress
+> 
 ## Introduction
 
 Augmented Reality (AR) and Mixed Reality (MR) enable superimposing digital content onto the real world.
