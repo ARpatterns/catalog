@@ -14,7 +14,7 @@
 | Chain Reaction Pattern	| Course of events processed as sequence of indirect reactions	| Rule changing data that will trigger a rule to update an item’s visual as a follow-up |
 | Complementary Reactions Pattern	| Two reactions with opposite result	|Reacting on toggling states with two complementary active rules|
 | Detector Reactivation Pattern	| Reactivate detector with only once reaction	|Reactivate detector after resulting augmentation is no longer existing |
-|
+
 
 
 ## Immediate Reaction Pattern
