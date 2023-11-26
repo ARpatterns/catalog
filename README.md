@@ -2,7 +2,7 @@
 
 **Catalog of AR Patterns: Event-driven Design Patterns in Creating Augmented Reality Experiences**
 
-> **Hint**: Work in prgress
+> **Hint**: Work in progress
 > 
 ## Introduction
 
