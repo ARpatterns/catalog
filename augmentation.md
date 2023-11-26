@@ -28,5 +28,5 @@ leaving limited control over time and space for AR scenography (in contrast to f
 | Staged Progression Pattern | Ordered, linear story: temporal order or interaction flow of 3D presentations	| Sequence of 3D presentations with forth and optionally back movements | 
 | Attention Director Pattern | Guide user’s attention to relevant place | Use animated pointers to direct user’s attention |
 | Contextual Plot Pattern | Spatio-temporal setting that aggregates diverse AR patterns to form a non-linear plot | Scenography of dynamic, interactive, and animated AR | 
-|
+
 
