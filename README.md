@@ -14,17 +14,3 @@ AR patterns are encompassing fundamental concepts for crafting immersive AR expe
 ## Behavior Patterns
 
 [Behavior Patterns](behavior.md)
-
----
-
-## Event-Condition-Action Pattern
-
-Event-Condition-Action rules are leveraged as a generic abstraction from the reactive behavior of AR software systems to establish a unified framework. AR-specific behavioral patterns and augmentation patterns are presented in detail. 
-
-### Events Categories in AR Applications
-
-## AR Pattern Diagram
-
-[AR Pattern Diagram](../diagram.md)
-
-
