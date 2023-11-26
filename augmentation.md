@@ -5,7 +5,7 @@
 While a VR/3D designer is placing virtual objects using positions in a controlled world coordinate system, 
 an AR content creator primarily specifies object placement intents relative to appearing anchors, 
 which are dynamically produced by detectors. These spatial anchors serve as reference points for pinning objects. 
-Generally in AR Patterns, the augmentation intents are formulated as ECA rules that are triggered by detector events. 
+Generally in AR Patterns, the augmentation intents are formulated as [Event-Condition-Action](eca.md) (ECA) rules that are triggered by detector events. 
 When a detector event occurs, ECA rule’s reaction will add augmentation items to the AR scene.
 
 The following table outlines several common placement intents for event-driven augmentation patterns 
