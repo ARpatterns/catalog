@@ -2,7 +2,7 @@
 
 > **Hint**: Work in progress
 
-The real world context during an AR session can be seen as stage. The dynamic behavior of an AR experience is determined by its Event-Condition-Action rules, which are triggered by events occurring in the actual real-world context.
+The real world context during an AR session can be seen as stage. The dynamic behavior of an AR experience is determined by its [Event-Condition-Action](eca.md) rules, which are triggered by events occurring in the actual real-world context.
 
 | Behavioral Pattern	| Description	| Example |
 |---|---|---|
