@@ -1,4 +1,6 @@
-# Behavior Patterns (DRAFT)
+# Behavior Patterns
+
+> **Hint**: Work in progress
 
 
 | Behavioral Pattern	| Description	| Example |
