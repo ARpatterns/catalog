@@ -4,7 +4,7 @@ Event-Condition-Action rules are leveraged as a generic abstraction from the rea
 
 ## Events Categories in AR Applications
 
-[Events Categories in AR](../events.md)
+[Events Categories in AR](events.md)
 
 ## AR Pattern Diagram
 
