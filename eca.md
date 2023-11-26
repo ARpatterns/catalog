@@ -8,6 +8,6 @@ Event-Condition-Action rules are leveraged as a generic abstraction from the rea
 
 ## AR Pattern Diagram
 
-[AR Pattern Diagram](../../../diagram/README.md)
+[AR Pattern Diagram](../../../diagram)
 
 
