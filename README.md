@@ -9,7 +9,7 @@ AR patterns are encompassing fundamental concepts for crafting immersive AR expe
 
 ## Augmentation Patterns
 
-Augmentation intents triggered by detector events which add augmentation items to the AR scene.
+Augmentation intents triggered by detector events and which add augmentation items to the AR scene.
 
 List of [Augmentation Patterns](augmentation.md)
 
