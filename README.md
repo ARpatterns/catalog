@@ -10,6 +10,8 @@ Augmented Reality (AR) and Mixed Reality (MR) enable superimposing digital conte
 Design patterns are a widely accepted concept for documenting proven solutions to recurring design problems. 
 AR patterns are encompassing fundamental concepts for crafting immersive AR experiences.
 
+If you are interested in contributing please get in [contact](https://github.com/metason) via email.
+
 ## Augmentation Patterns
 
 Augmentation intents triggered by detector events and which add augmentation items to the AR scene.
