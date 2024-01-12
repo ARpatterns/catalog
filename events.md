@@ -5,14 +5,14 @@ Within an Augmented Reality session of ARchi VR the following event types may ha
 
 | Event Type	| Producer |	Cause	| Time Resolution |
 |--- |--- |---|---|
-| Session Event	| AR Session	| Change of session state → `on:start, on:stable, on:load, on:error, on:stop`	| in realtime |
-| Invocation Event	| Command Initiation or Function Call	| Invocation of task → `on:command, as:once`, function call → `on:call`	| in realtime |
-| Detection Event	| Installed Detector	| Discovery of designated entity → `on:detect`	| 100 - 500 ms |
-| User Event	| App User	| User interaction → `on:tap, on:press, on:drag, on:select, on:dialog, on:poi`	| in realtime |
-| Temporal Event	| Time Scheduler	| Elapsed time in seconds reached → `in:time`	| 200 ms |
-| Data-driven Event	| Data Observer & Context Dispatcher	| Observed change of key-value in data model → `as:changed, as:stated, as:steady, as:activated, as:altered, as:always, as:repeated`	| 200 ms| 
-| Response Event	| Remote Request	| Async response of REST API call → `do:request`	| 20 - 5’000 ms| 
-| Notification Event	| Subscribed System: Bonjour or SharePlay	| Received notification during collaboration → `on:enter, on:leave`; Broadcast task → `as:broadcast`	| 50 - 250 ms |
+| [Session Event](#session-events)	| AR Session	| Change of session state → `on:start, on:stable, on:load, on:error, on:stop`	| in realtime |
+| [Invocation Event](#invocation-events)	| Command Initiation or Function Call	| Invocation of task → `on:command, as:once`, function call → `on:call`	| in realtime |
+| [Detection Event](#detection-events)	| Installed Detector	| Discovery of designated entity → `on:detect`	| 100 - 500 ms |
+| [User Event](#user-events)	| App User	| User interaction → `on:tap, on:press, on:drag, on:select, on:dialog, on:poi`	| in realtime |
+| [Temporal Event](#temporal-events)	| Time Scheduler	| Elapsed time in seconds reached → `in:time`	| 200 ms |
+| [Data-driven](#data-driven-events)	| Data Observer & Context Dispatcher	| Observed change of key-value in data model → `as:changed, as:stated, as:steady, as:activated, as:altered, as:always, as:repeated`	| 200 ms| 
+| [Response Event](#response-events)	| Remote Request	| Async response of REST API call → `do:request`	| 20 - 5’000 ms| 
+| [Notification Event](#notification-events)	| Subscribed System: Bonjour or SharePlay	| Received notification during collaboration → `on:enter, on:leave`; Broadcast task → `as:broadcast`	| 50 - 250 ms |
 |
 
 
@@ -51,7 +51,7 @@ By using a state machine, both value changes and state transitions can generate 
 * `on:response`: on receiving response from request 
 * `on:error`: on error of handling request
 
-## Detection Event
+## Detection Events
 * `on:detect`: on detecting occurrence of depicted type
 * `on:track`: on tracked changes in occurrence of depicted type
 

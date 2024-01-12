@@ -4,12 +4,12 @@ Common Actions in AR applications listed by category.
 
 |Category|
 |---|
-|Item-Related Actions|
-|Visual-Related Actions|
-|UI-Related Actions|
-|Data-Related Actions|
-|Process-Related Actions|
-|Detector-Related Actions|
+| [Item-Related Actions](#item-related-actions) |
+| [Visual-Related Actions](#visual-related-actions) |
+| [UI-Related Actions](#ui-related-actions) |
+| [Data-Related Actions](#data-related-actions) |
+| [Process-Related Actions](#process-related-actions) |
+| [Detector-Related Actions](#detector-related-actions) |
 
 ## Item-Related Actions
 * `do:add at`: add and anchor item at position
