@@ -10,6 +10,10 @@ Event-Condition-Action rules are leveraged as a generic abstraction from the rea
 
 [Condition Evaluation within AR](condition-evaluation.md)
 
+## Actions in AR Applications
+
+[Actions in AR](actions.md)
+
 ## AR Pattern Diagram
 
 [AR Pattern Diagram](../../../diagram)
