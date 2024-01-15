@@ -6,15 +6,15 @@ The real world context during an AR session can be seen as stage. The dynamic be
 
 | Behavioral Pattern	| Description	| Example |
 |---|---|---|
-| [Instant Reaction Pattern](behavioral-patterns/instant-reaction.md)	| Direct execution of task triggered by invocation event	| Immediate, singular command of task or function call |
-| [Timed Reaction Pattern](behavioral-patterns/timed-reaction.md)	| Temporally executed action	| Delayed action, timed action sequence|
+| [Instant Reaction Pattern](behavioral-patterns/instant-reaction.md)	| Direct execution of action triggered by invocation of rule	| Immediate command of action or call of function |
+| [Timed Reaction Pattern](behavioral-patterns/timed-reaction.md)	| Temporally executed action	| Delayed action or sequence of timed actions|
 | [Conditional Reaction Pattern](behavioral-patterns/conditional-reaction.md)	| Execute an action only when a condition is fulfilled after being triggered by event	| State-driven, asynchronous programming logic|
-| [Continous Evaluation Pattern](behavioral-patterns/continous-evaluation.md)	| Continous polling of state change	|Existence check, visibility check, proximity check, repeated update checks |
-| [Publish-Subscribe Notification Pattern](behavioral-patterns/publish-subscribe-notification.md)	| Receive notifications via a message queue from a subscribed system	| In FaceTime/SharePlay call, in Bluetooth connection, in WebSocket/WebRTC session |
-| [Request Response Pattern](behavioral-patterns/request-response.md)	| Remote procedure call resulting in asynchronously receiving ECA rules or media assets	| REST API call via a Web URL to load rules or assets (images, 3D models), e.g., `GET:JSON` or `POST:CONTEXT`|
-| [Chain Reaction Pattern](behavioral-patterns/chain-reaction.md)	| Course of events processed as sequence of indirect reactions	| Rule changing data that will trigger a rule to update an item’s visual as a follow-up |
-| [Complementary Reactions Pattern](behavioral-patterns/complementary-reactions.md)	| Two reactions with opposite result	|Reacting on toggling states with two complementary active rules|
-| [Detector Reactivation Pattern](behavioral-patterns/detector-reactivation.md)	| Reactivate detector with only once reaction	|Reactivate detector after resulting augmentation is no longer existing |
+| [Continous Evaluation Pattern](behavioral-patterns/continous-evaluation.md)	| Continuous polling of state changes that will triggers rules	|Continuous checks on value change, existence, visibility, proximity |
+| [Publish-Subscribe Notification Pattern](behavioral-patterns/publish-subscribe-notification.md)	| Receive notifications via a message queue from a subscribed system	| From speech recognition system or from WebRTC system in collaboration session |
+| [Request-Response Pattern](behavioral-patterns/request-response.md)	| Remote procedure call resulting in asynchronously receiving ECA rules or media assets	| REST API call via a Web URL to load rules or assets (images, 3D models)|
+| [Chain Reaction Pattern](behavioral-patterns/chain-reaction.md)	| Course of events processed as sequence of indirect reactions of running subsequenced rules	| Rule changing data that will trigger a rule to update an item’s visual as a follow-up |
+| [Complementary Reactions Pattern](behavioral-patterns/complementary-reactions.md)	| Two active rules with opposite reactions	|Reacting on toggling states with two complementary active rules|
+| [Detector Reactivation Pattern](behavioral-patterns/detector-reactivation.md)	| Reactivate detector with only-once reaction	|Reactivate detector after resulting augmentation is no longer existing |
 
 
 ## Immediate Reaction Pattern
@@ -53,7 +53,7 @@ A sequence of timed reactions as an example:
 The built-in state management is observing model as well as data elements and dispatches the processing of reactions.
 
 
-## Request Response Pattern
+## Request-Response Pattern
 Remote request with async response:
 
 | on:command	| →	| do:request GET:JSON | 
