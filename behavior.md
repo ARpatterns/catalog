@@ -6,7 +6,7 @@ The real world context during an AR session can be seen as stage. The dynamic be
 
 | Behavioral Pattern	| Description	| Example |
 |---|---|---|
-| [Immediate Reaction Pattern](behavioral-patterns/immediate-reaction.md)	| Direct execution of task triggered by invocation event	| Immediate, singular command of task or function call |
+| [Instant Reaction Pattern](behavioral-patterns/instant-reaction.md)	| Direct execution of task triggered by invocation event	| Immediate, singular command of task or function call |
 | [Timed Reaction Pattern](behavioral-patterns/timed-reaction.md)	| Temporally executed action	| Delayed action, timed action sequence|
 | [Conditional Reaction Pattern](behavioral-patterns/conditional-reaction.md)	| Execute an action only when a condition is fulfilled after being triggered by event	| State-driven, asynchronous programming logic|
 | [Continous Evaluation Pattern](behavioral-patterns/continous-evaluation.md)	| Continous polling of state change	|Existence check, visibility check, proximity check, repeated update checks |
