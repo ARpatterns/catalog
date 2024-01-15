@@ -1,9 +1,6 @@
 # Chain Reaction Pattern
 
-A sequence of several chained reactions. 
-Execute an action that is triggered by a changed state caused by a former event
-
-Loosly coupled reactive programming.
+A reaction of a rule can trigger a new event that invokes subsequent rules. In turn, these subsequent rules may have reactions that again invoke rules, leading to a chain of reactions. The Chain Reaction pattern consists of consecutive loaded rules and of indirect reactions which lead to a cascade of triggered rules with their corresponding reactions.
 
 Active rules are processed asynchronously to avoid coordination and waiting. Coupling of data and visuals or audio can be achieved by observing state changes.
 

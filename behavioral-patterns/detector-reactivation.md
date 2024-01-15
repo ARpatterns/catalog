@@ -1,5 +1,6 @@
 # Detector Reactivation Pattern
-Some detectors stop after capturing a first occurence of the depicted entity and need be reactivated by a do:redetect task. The reactivation can be driven by a separate active rule, e.g. by evaluating in the condition the visibility of an added item by the detector.
+
+Some detectors halt after capturing a first occurrence of an entity and need to be reactivated by a `do:redetect` action. The reactivation can be driven by a separate active rule, for instance, after a specific period of time or by assessing the existence or visibility of the item added by the detector based on a corresponding condition.
 
 | on:command	| →	| do:detect:feature | 
 |---|---|---|
