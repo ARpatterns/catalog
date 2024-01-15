@@ -15,18 +15,18 @@ leaving limited control over time and space for AR scenography (in contrast to f
 
 | Augmentation Pattern	| Description	| Example |
 |---|---|---|
-| Geolocated Remark Pattern	| Triggering of action or of user feedback based on GPS location data (long/lat) or address data (city, street, ...)	| Visual or audio feedback in standard UI about location-based point of interest | 
-| Segment Overlay Pattern	| Presentation of 2D overlay on top of image segment detected in video stream	| Attaching 2D text description to a detected image segment | 
-| Area Enrichment Pattern	| Approximately placing 3D content at area of image segment| Presenting ballons in sky area | 
-| Captured Twin Pattern	| Captured element of real world added as 3D model	| Captured walls, doors and windows in an indoor AR session | 
-| Anchored Supplement Pattern	| Presentation of 3D content aligned to detected entity for enhancement	| Attaching visual 3D elements to a detected image (marker) or captured object | 
-| Superimposition Pattern	| Presentation of 3D content replacing a detected entity	| (Re-)Place a detected image with another one | 
-| Tag-along Pattern	| Presentation of 3D content within user’s field of view while head-locked	| Place interactive 3D elements that follow the user | 
-| Hand/Palm Pop-up Pattern	| Presentation of 3D content on palm of hand while visible	| Place 3D UI elements at palm of user's one hand | 
-| Ahead Staging Pattern	| Presentation of 3D content ahead of user	| Placing 3D item on floor infront of spectator | 
-| Pass-through Portal Pattern	| Presentation of partly hidden 3D content to force user to go through	| Placing 3D scene behind a portal / behind an opening | 
-| Staged Progression Pattern | Ordered, linear story: temporal order or interaction flow of 3D presentations	| Sequence of 3D presentations with forth and optionally back movements | 
-| Attention Director Pattern | Guide user’s attention to relevant place | Use animated pointers to direct user’s attention |
-| Contextual Plot Pattern | Spatio-temporal setting that aggregates diverse AR patterns to form a non-linear plot | Scenography of dynamic, interactive, and animated AR | 
+| [Geolocated Remark Pattern](augmentation-patterns/geolocated-remark.md)	| Triggering of action or of user feedback based on GPS location data (long/lat) or address data (city, street, ...)	| Visual or audio feedback in standard UI about location-based point of interest | 
+| [Segment Overlay Pattern](augmentation-patterns/segment-overlay.md)	| Presentation of 2D overlay on top of image segment detected in video stream	| Attaching 2D text description to a detected image segment | 
+| [Area Enrichment Pattern](augmentation-patterns/area-enrichment.md)	| Approximately placing 3D content at area of image segment| Presenting ballons in sky area | 
+| [Captured Twin Pattern](augmentation-patterns/captured-twin.md)	| Captured element of real world added as 3D model	| Captured walls, doors and windows in an indoor AR session | 
+| [Anchored Supplement Pattern](augmentation-patterns/anchored-supplement.md)	| Presentation of 3D content aligned to detected entity for enhancement	| Attaching visual 3D elements to a detected image (marker) or captured object | 
+| [Superimposition Pattern](augmentation-patterns/superimposition.md)	| Presentation of 3D content replacing a detected entity	| (Re-)Place a detected image with another one | 
+| [Tag-along Pattern](augmentation-patterns/tag-along.md)	| Presentation of 3D content within user’s field of view while head-locked	| Place interactive 3D elements that follow the user | 
+| [Hand/Palm Pop-up Pattern](augmentation-patterns/hand-palm-popup.md)	| Presentation of 3D content on palm of hand while visible	| Place 3D UI elements at palm of user's one hand | 
+| [Ahead Staging Pattern](augmentation-patterns/ahead-staging.md)	| Presentation of 3D content ahead of user	| Placing 3D item on floor infront of spectator | 
+| [Pass-through Portal Pattern](augmentation-patterns/pass-through-portal.md)	| Presentation of partly hidden 3D content to force user to go through	| Placing 3D scene behind a portal / behind an opening | 
+| [Staged Progression Pattern](augmentation-patterns/staged-progression.md) | Ordered, linear story: temporal order or interaction flow of 3D presentations	| Sequence of 3D presentations with forth and optionally back movements | 
+| [Attention Director Pattern](augmentation-patterns/attention-director.md) | Guide user’s attention to relevant place | Use animated pointers to direct user’s attention |
+| [Contextual Plot Pattern](augmentation-patterns/contextual-plot.md) | Spatio-temporal setting that aggregates diverse AR patterns to form a non-linear plot | Scenography of dynamic, interactive, and animated AR | 
 
 
