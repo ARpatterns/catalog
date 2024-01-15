@@ -55,6 +55,23 @@ By using a state machine, both value changes and state transitions can generate 
 * `on:detect`: on detecting occurrence of depicted type
 * `on:track`: on tracked changes in occurrence of depicted type
 
+### Specialized Detector Types
+| Detector Type | Description |
+|---|---|
+| Location Detector | Tracks world location and device pose in environment. |
+| Feature Detector | classifies feature as video stream label. |
+| Segment Detector | tracks feature as image segment in video stream. |
+| Plane Detector | detects plane in 3D space. |
+| Image Detector | recognizes and tracks image or marker in 3D space. |
+| Text Detector | detects text matched by regular expression in video or 3D. |
+| Code Detector | detects QR/barcode matched by regex in video or 3D. |
+| Object Detector | detects object by shape in image or 3D. |
+| Face Detector | tracks facial parts of humans in video or 3D. |
+| Hand Detector | tracks hand, fingers, and gestures in 3D. |
+| Body Detector | tracks body parts and joints of humans in video or 3D. |
+| Speech Detector | recognizes voice commands. |
+| Transmitter Detector | locates signal and position of wireless sender. |
+
 ## Notification Events
 * `on:voice`: on voice command from speech recognition system
 * `on:enter`: on enter of participant in collaboration session
