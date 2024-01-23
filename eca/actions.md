@@ -1,16 +1,5 @@
 # Actions in AR Applications
 
-Common Actions in AR applications listed by category.
-
-|Category|
-|---|
-| [Item-Related Actions](#item-related-actions) |
-| [Visual-Related Actions](#visual-related-actions) |
-| [UI-Related Actions](#ui-related-actions) |
-| [Data-Related Actions](#data-related-actions) |
-| [Process-Related Actions](#process-related-actions) |
-| [Detector-Related Actions](#detector-related-actions) |
-
 ## Item-Related Actions
 Items are elements of the application model. An item can be represented as 3D object in the AR scene or as 2D overlay (sprite image, text label, UI element, ...) on top of the AR view.
 
