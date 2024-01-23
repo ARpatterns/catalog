@@ -24,8 +24,8 @@ Augmentation intents triggered by detector events and which add augmentation ite
 
 List of [Augmentation Patterns](augmentation.md)
 
-## Behavior Patterns
+## Behavioral Patterns
 
 Typical patterns for defining the dynamic behavior of AR experiences.
 
-List of [Behavior Patterns](behavior.md)
+List of [Behavioral Patterns](behavioral.md)

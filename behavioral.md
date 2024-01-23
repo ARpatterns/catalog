@@ -1,4 +1,4 @@
-# Behavior Patterns
+# Behavioral Patterns
 
 > **Hint**: Work in progress
 
