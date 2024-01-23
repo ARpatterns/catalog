@@ -60,3 +60,6 @@ The real world context during an AR session can be seen as stage. The dynamic be
 To design reactive systems, breaking down the system’s behavior into discrete events, conditions, and actions provides a structured and modular approach.
 
 Description of the [ECA Pattern](eca.md)
+
+## AR Pattern Diagram
+All of the patterns are documented in a standardized way explained in the [AR Pattern Diagram](https://github.com/ARpatterns/diagram) repository.
