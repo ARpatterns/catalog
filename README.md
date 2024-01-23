@@ -12,12 +12,6 @@ AR patterns are encompassing fundamental concepts for crafting immersive AR expe
 
 If you are interested in contributing please get in [contact](https://github.com/metason) via email.
 
-## Event-Condition-Action Pattern
-
-To design reactive systems, breaking down the system’s behavior into discrete events, conditions, and actions provides a structured and modular approach.
-
-Description of the [ECA Pattern](eca.md)
-
 ## Augmentation Patterns
 
 Augmentation intents triggered by detector events and which add augmentation items to the AR scene.
@@ -29,3 +23,9 @@ List of [Augmentation Patterns](augmentation.md)
 Typical patterns for defining the dynamic behavior of AR experiences.
 
 List of [Behavioral Patterns](behavioral.md)
+
+## Event-Condition-Action Pattern
+
+To design reactive systems, breaking down the system’s behavior into discrete events, conditions, and actions provides a structured and modular approach.
+
+Description of the [ECA Pattern](eca.md)
