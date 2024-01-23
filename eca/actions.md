@@ -12,6 +12,8 @@ Common Actions in AR applications listed by category.
 | [Detector-Related Actions](#detector-related-actions) |
 
 ## Item-Related Actions
+Items are elements of the application model. An item can be represented as 3D object in the AR scene or as 2D overlay (sprite image, text label, UI element, ...) on top of the AR view.
+
 * `do:add at`: add and anchor item at position
 * `do:add onto`: add and anchor item onto another item
 * `do:add to`: add item as child to another item
@@ -25,6 +27,7 @@ Common Actions in AR applications listed by category.
 * `do:lock/unlock`: lock/unlock item to control allowed manipulation
 
 ## Visual-Related Actions
+Visual-related actions do change the visual representation of items in the AR scene but are not reflected or stored in the application model.
 
 * `do:hide/unhide`: hide/unhide visual representation of item 
 * `do:translate to/by`: move absolute/relative 
@@ -36,6 +39,7 @@ Common Actions in AR applications listed by category.
 * `do:illuminate`: add additional lightning to hot spot (from above or from camera)
 
 ## UI-Related Actions
+Common actions to control the user interface of an AR application.
 
 * `do:prompt`: show instruction in a pop-up panel 
 * `do:confirm`: get a YES/NO confirmation via an pop-up dialog panel 
@@ -54,7 +58,6 @@ Common Actions in AR applications listed by category.
 * `do:snapshot`: take photo shot
 
 ## Data-Related Actions
-
 * `do:assign`: set a data variable to a value 
 * `do:concat`: concatenate a string with an existing variable 
 * `do:select`: select a value from a menu and assign to data variable 
@@ -63,7 +66,6 @@ Common Actions in AR applications listed by category.
 * `do:clear`: delete data variable
 
 ## Process-Related Actions
-
 * `do:save`: save the AR scene / application model 
 * `do:exit`: end AR session 
 * `do:execute`: execute function(s) 
@@ -72,7 +74,6 @@ Common Actions in AR applications listed by category.
 * `do:request`: request action from remote server and execute
 
 ## Detector-Related Actions
-
 * `do:detect type`: install detector for type (feature, text, plane, image, ...) 
 * `do:halt`: deactivate detector 
 * `do:redetect`: reactivate detector
