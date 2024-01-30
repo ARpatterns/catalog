@@ -4,3 +4,12 @@ The hand/palm pop-up is a prevalent design pattern used to present interaction e
 
 | placed: _constraint on palm_ | aligned: _constraint towards user_ |
 |---|---|
+
+## Examples
+
+| HoloLens |
+|:---:|
+| Hand menu[^1] |
+| <img align="right" src="../examples/HoloLens/hand-menu/preview.jpeg" width="150px" /> |
+
+[^1]: Microsoft Learn, Mixed Reality, Hand menu https://learn.microsoft.com/en-us/windows/mixed-reality/design/hand-menu
