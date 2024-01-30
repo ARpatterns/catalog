@@ -11,3 +11,9 @@ Active rules are processed asynchronously to avoid coordination and waiting. Cou
 | as:stated	| if:data.flag == 1	| do:say | 
 |---|---|---|
 > "Indirect Reaction Pattern" 🗣
+
+## Examples
+
+| ARchi VR |
+|---|
+| [Button places Box](../examples/ARchiVR/button-places-box/description.md) | 
