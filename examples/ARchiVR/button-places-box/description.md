@@ -1,9 +1,8 @@
 # Button places Box
-> ARchi VR
-
-Pressing the overlay button in the bottom right corner (+) sets a data flag that is listened to by a rule that places the box.
 
 <img align="right" src="./preview.gif" />
+
+Pressing the overlay button in the bottom right corner (+) sets a data flag that is listened to by a rule that places the box.
 
 ## Diagram
 | on:command |  &rarr; | do:add |
