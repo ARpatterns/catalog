@@ -1,9 +1,11 @@
 # Button places Box
+> ARchi VR
 
 Pressing the overlay button in the bottom right corner (+) sets a data flag that is listened to by a rule that places the box.
 
-![Preview](./preview.gif)
+<img align="right" src="./preview.gif" />
 
+## Diagram
 | on:command |  &rarr; | do:add |
 |---|---|---|
 > 'overlay.button' ➕
@@ -16,9 +18,8 @@ Pressing the overlay button in the bottom right corner (+) sets a data flag that
 |---|---|---|
 > 'redBox' ➕
 
-
+## Code
 ```json
-// chain-reaction-pattern.json
 {
     "$schema": "https://service.metason.net/ar/schemas/action.json",
     "items": [
