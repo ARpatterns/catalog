@@ -9,3 +9,10 @@ Ahead staging is a technique for presenting 3D content in a way that it is align
 | <img src="../assets/images/withobj.jpg" width="200"> | <img src="../assets/images/north.jpg" width="200"> | <img src="../assets/images/touser.jpg" width="200"> | <img src="../assets/images/towall.jpg" width="200"> |
 |:---:|:---:|:---:|:---:|
 | with object | geo-referenced | towards user | to environment |
+
+## Examples
+
+| ARchi VR |
+|:---:|
+| [Button places Box](../examples/ARchiVR/button-places-box/description.md) |
+| <img align="right" src="../examples/ARchiVR/button-places-box/preview.gif" width="150px" /> |
