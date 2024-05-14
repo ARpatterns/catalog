@@ -1,0 +1,33 @@
+{
+  "$schema": "https://service.metason.net/ar/schemas/action.json",
+  "items" : [
+    {
+      "asset" : "https://service.metason.net/ar/content/assets/3D/chest.usdz",
+      "attributes" : "wxdxh:0.77x0.58x0.56;",
+      "id" : "wooden.chest",
+      "subtype" : "Interior",
+      "type" : "3D Object"
+    },
+    {
+      "asset" : "https://service.metason.net/ar/extension/images/plus.png",
+      "attributes" : "right:20;bottom:20;width:40;height:40;",
+      "content" : "on:tap= assign('data.flag', 1)",
+      "id" : "overlay.button",
+      "subtype" : "Image",
+      "type" : "Overlay"
+    }
+  ],
+  "tasks" : [
+    {
+      "do" : "add",
+      "id" : "overlay.button"
+    },
+    {
+      "as" : "stated",
+      "if" : "data.flag == 1",
+      "do" : "add",
+      "id" : "wooden.chest",
+      "ahead" : "0 0 -1.5"
+    }
+  ]
+}

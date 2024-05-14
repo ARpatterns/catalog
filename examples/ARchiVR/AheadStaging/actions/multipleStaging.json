@@ -1,0 +1,43 @@
+{
+  "$schema": "https://service.metason.net/ar/schemas/action.json",
+  "items" : [
+    {
+      "attributes" : "color:#FF0000; wxdxh:1.1x1.1x0.25; rays:5; ratio: 0.6",
+      "id" : "red.star",
+      "isLocked" : true,
+      "subtype" : "Star",
+      "type" : "Geometry"
+    },
+    {
+      "attributes" : "color:#996622; wxdxh:0.2x0.2x0.5",
+      "id" : "brown.cylinder",
+      "isLocked" : true,
+      "subtype" : "Cylinder",
+      "type" : "Geometry"
+    },
+    {
+      "attributes" : "color:#00CC00; wxdxh:0.75x0.75x0.75",
+      "id" : "green.sphere",
+      "isLocked" : true,
+      "subtype" : "Sphere",
+      "type" : "Geometry"
+    }
+  ],
+  "tasks" : [
+    {
+      "do" : "add",
+      "id" : "red.star",
+      "ahead" : "0 0 -1.5"
+    },
+    {
+      "do" : "add",
+      "id" : "brown.cylinder",
+      "ahead" : "0 0.24 -1.5"
+    },
+    {
+      "do" : "add",
+      "id" : "green.sphere",
+      "ahead" : "0 0.72 -1.5"
+    }
+  ]
+}

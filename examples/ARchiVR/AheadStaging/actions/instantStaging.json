@@ -1,0 +1,18 @@
+{
+  "$schema": "https://service.metason.net/ar/schemas/action.json",
+  "items" : [
+    {
+      "attributes" : "color:#FF0000; wxdxh:0.55x0.55x0.55; ratio:0.2",
+      "id" : "red.box",
+      "subtype" : "Cube",
+      "type" : "Geometry"
+    }
+  ],
+  "tasks" : [
+    {
+      "do" : "add",
+      "id" : "red.box",
+      "ahead" : "0 0 -1.2"
+    }
+  ]
+}

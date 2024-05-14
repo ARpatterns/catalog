@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Ahead Staging Pattern</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="ahead-staging-pattern">Ahead Staging Pattern</h1>
+<p>Ahead staging is a technique for presenting 3D content in a way that it is aligned to the spectator’s position and view direction. After the initial staging, users can interact with the virtual scene from their current position or move toward and around the staged content.</p>
+<p><em><strong>NOTE</strong></em>: Try out the examples. Open <code>aheadStaging.arproject</code> in <a href="">ARchi Composer</a> for browsing, editing, and live-injecting the code from your Mac to the <a href="https://archi.metason.net">ARchi VR App</a> on your iOS device.</p>
+<h2 id="instant-ahead-staging">Instant Ahead Staging</h2>
+<p><img src="docs/images/screen1.jpg" alt="screen 1"></p>
+<h3 id="ar-patterns">AR Patterns</h3>
+<p><em>Behavior</em></p>
+<ul>
+<li><a href="../../../behavioral-patterns/instant-reaction.html">Instant Reaction</a>: Immediate execution of the staging ahead action</li>
+</ul>
+<p><em>Augmentation</em></p>
+<ul>
+<li><a href="../../../augmentation-patterns/ahead-staging.html">Ahead Staging</a>: presenting 3D object <code>red.box</code>1.5 m  in front of the user
+<ul>
+<li>Placed: initial ahead of the user on the floor</li>
+<li>Aligned: initial towards the user in view direction</li>
+</ul>
+</li>
+</ul>
+<h3 id="diagram">Diagram</h3>
+<table>
+<thead>
+<tr>
+<th>on:command</th>
+<th>→</th>
+<th>do:add ahead 0 0 -1.2</th>
+</tr>
+</thead>
+</table>
+<blockquote>
+<p>'red.box' ➕</p>
+</blockquote>
+<h3 id="code">Code</h3>
+<pre><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;$schema&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://service.metason.net/ar/schemas/action.json&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;items&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;attributes&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;color:#FF0000; wxdxh:0.55x0.55x0.55; ratio:0.2&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;red.box&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;subtype&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Cube&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;type&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Geometry&quot;</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;tasks&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;do&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;add&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;red.box&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;ahead&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0 0 -1.2&quot;</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<h3 id="links">Links</h3>
+<ul>
+<li>Detailed Docu: <a href="docs/instantStaging.html">docs/instantStaging.md</a></li>
+<li>Source Code: <a href="actions/instantStaging.json">actions/instantStaging.json</a></li>
+</ul>
+<h2 id="multiple-ahead-staging">Multiple Ahead Staging</h2>
+<p><img src="docs/images/screen2.jpg" alt="screen 2"></p>
+<h3 id="ar-patterns-1">AR Patterns</h3>
+<p><em>Behavior</em></p>
+<ul>
+<li><a href="../../../behavioral-patterns/instant-reaction.html">Instant Reaction</a>: Immediate execution of a sequence of staging ahead actions.</li>
+</ul>
+<p><em>Augmentation</em></p>
+<ul>
+<li><a href="../../../augmentation-patterns/ahead-staging.html">Ahead Staging</a>: presenting three 3D objects 1.5 m in front of the user at differnt heights.
+<ul>
+<li>Placed: initial ahead of the user. The first on the floor, the others above it.</li>
+<li>Aligned: initial towards the user in view direction.</li>
+</ul>
+</li>
+</ul>
+<h3 id="diagram-1">Diagram</h3>
+<table>
+<thead>
+<tr>
+<th>on:command</th>
+<th>→</th>
+<th>do:add ahead 0 0 -1.5</th>
+</tr>
+</thead>
+</table>
+<blockquote>
+<p>'red.star' ➕</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>on:command</th>
+<th>→</th>
+<th>do:add ahead 0 0.24 -1.5</th>
+</tr>
+</thead>
+</table>
+<blockquote>
+<p>'brown.cylinder' ➕</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>on:command</th>
+<th>→</th>
+<th>do:add ahead 0 0.72 -1.5</th>
+</tr>
+</thead>
+</table>
+<blockquote>
+<p>'green.sphere' ➕</p>
+</blockquote>
+<h3 id="code-1">Code</h3>
+<pre><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;$schema&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://service.metason.net/ar/schemas/action.json&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;items&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;attributes&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;color:#FF0000; wxdxh:1.1x1.1x0.25; rays:5; ratio: 0.6&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;red.star&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;isLocked&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-keyword">true</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;subtype&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Star&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;type&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Geometry&quot;</span>
+    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;attributes&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;color:#996622; wxdxh:0.2x0.2x0.5&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;brown.cylinder&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;isLocked&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-keyword">true</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;subtype&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Cylinder&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;type&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Geometry&quot;</span>
+    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;attributes&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;color:#00CC00; wxdxh:0.75x0.75x0.75&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;green.sphere&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;isLocked&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-keyword">true</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;subtype&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Sphere&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;type&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Geometry&quot;</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;tasks&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;do&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;add&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;red.star&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;ahead&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0 0 -1.5&quot;</span>
+    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;do&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;add&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;brown.cylinder&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;ahead&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0 0.24 -1.5&quot;</span>
+    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;do&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;add&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;green.sphere&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;ahead&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0 0.72 -1.5&quot;</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<h3 id="links-1">Links</h3>
+<ul>
+<li>Detailed Docu: <a href="docs/multipleStaging.html">docs/multipleStaging.md</a></li>
+<li>Source Code: <a href="actions/multipleStaging.json">actions/multipleStaging.json</a></li>
+</ul>
+<h2 id="indirect-ahead-staging">Indirect Ahead Staging</h2>
+<p><img src="docs/images/screen3.jpg" alt="screen 3"></p>
+<h3 id="ar-patterns-2">AR Patterns</h3>
+<p><em>Behavior</em></p>
+<ul>
+<li><a href="../../../behavioral-patterns/conditional-reaction.html">Conditional Reaction</a>: Pressing the overlay button (+) in the bottom right corner sets a data flag. If the data flag becomes the value of 1 the ECA rule is executing the ahead staging action that places the 3D object into the scene.</li>
+</ul>
+<p><em>Augmentation</em></p>
+<ul>
+<li><a href="../../../augmentation-patterns/ahead-staging.html">Ahead Staging</a>: sdsdfdsff
+<ul>
+<li>Placed: initial ahead of the user in different heights.</li>
+<li>Aligned: initial towards the user in view direction.</li>
+</ul>
+</li>
+</ul>
+<h3 id="diagram-2">Diagram</h3>
+<table>
+<thead>
+<tr>
+<th>on:command</th>
+<th>→</th>
+<th>do:add</th>
+</tr>
+</thead>
+</table>
+<blockquote>
+<p>'overlay.button' ➕</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>as:stated</th>
+<th>if:<code>data.flag == 1</code></th>
+<th>do:add ahead 0 0 -1.5</th>
+</tr>
+</thead>
+</table>
+<blockquote>
+<p>'wooden.chest' ➕</p>
+</blockquote>
+<h3 id="code-2">Code</h3>
+<pre><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;$schema&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://service.metason.net/ar/schemas/action.json&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;items&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;asset&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://service.metason.net/ar/content/assets/3D/chest.usdz&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;attributes&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;wxdxh:0.77x0.58x0.56;&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;wooden.chest&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;subtype&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Interior&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;type&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;3D Object&quot;</span>
+    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;asset&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://service.metason.net/ar/extension/images/plus.png&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;attributes&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;right:20;bottom:20;width:40;height:40;&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;content&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;on:tap= assign(&#x27;data.flag&#x27;, 1)&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;overlay.button&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;subtype&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Image&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;type&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Overlay&quot;</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;tasks&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;do&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;add&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;overlay.button&quot;</span>
+    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;as&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;stated&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;if&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;data.flag == 1&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;do&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;add&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;id&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;wooden.chest&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;ahead&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0 0 -1.5&quot;</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<h3 id="links-2">Links</h3>
+<ul>
+<li>Detailed Docu: <a href="docs/indirectStaging.html">docs/indirectStaging.md</a></li>
+<li>Source Code: <a href="actions/indirectStaging.json">actions/indirectStaging.json</a></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li>ARchi VR <a href="https://service.metason.net/ar/docu/">Technical Documentation</a></li>
+<li>ARchi VR <a href="https://archi.metason.net">App</a></li>
+<li>AR Pattern <a href="../../../diagram">Diagram</a></li>
+</ul>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>

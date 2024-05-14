@@ -1,0 +1,125 @@
+{
+  "desc" : "Examples of Ahead Staging Pattern",
+  "sourceControl" : "",
+  "remoteServer" : "",
+  "nodes" : [
+    {
+      "relPath" : "aheadStaging.arproject",
+      "type" : "Project",
+      "comment" : "",
+      "name" : "Settings",
+      "children" : null
+    },
+    {
+      "name" : "README",
+      "comment" : "",
+      "type" : "README",
+      "relPath" : "README.md",
+      "children" : null
+    },
+    {
+      "name" : "docs",
+      "children" : [
+        {
+          "comment" : "",
+          "children" : [
+            {
+              "type" : "Image",
+              "name" : "wooden.chest.png",
+              "children" : null,
+              "relPath" : "docs/images/wooden.chest.png",
+              "comment" : ""
+            },
+            {
+              "relPath" : "docs/images/red.box.png",
+              "comment" : "",
+              "children" : null,
+              "type" : "Image",
+              "name" : "red.box.png"
+            },
+            {
+              "comment" : "",
+              "name" : "red.star.png",
+              "children" : null,
+              "type" : "Image",
+              "relPath" : "docs/images/red.star.png"
+            },
+            {
+              "type" : "Image",
+              "name" : "brown.cylinder.png",
+              "relPath" : "docs/images/brown.cylinder.png",
+              "children" : null,
+              "comment" : ""
+            },
+            {
+              "comment" : "",
+              "relPath" : "docs/images/green.sphere.png",
+              "name" : "green.sphere.png",
+              "children" : null,
+              "type" : "Image"
+            }
+          ],
+          "name" : "images",
+          "type" : "Images",
+          "relPath" : "docs/images/"
+        },
+        {
+          "name" : "instantStaging.md",
+          "relPath" : "docs/instantStaging.md",
+          "children" : null,
+          "comment" : "",
+          "type" : "Document"
+        },
+        {
+          "children" : null,
+          "name" : "multipleStaging.md",
+          "relPath" : "docs/multipleStaging.md",
+          "comment" : "",
+          "type" : "Document"
+        },
+        {
+          "comment" : "",
+          "type" : "Document",
+          "name" : "indirectStaging.md",
+          "relPath" : "docs/indirectStaging.md",
+          "children" : null
+        }
+      ],
+      "relPath" : "docs/",
+      "comment" : "",
+      "type" : "Documents"
+    },
+    {
+      "name" : "actions",
+      "children" : [
+        {
+          "children" : null,
+          "type" : "Action",
+          "name" : "instantStaging.json",
+          "comment" : "",
+          "relPath" : "actions/instantStaging.json"
+        },
+        {
+          "relPath" : "actions/multipleStaging.json",
+          "comment" : "",
+          "type" : "Action",
+          "name" : "multipleStaging.json",
+          "children" : null
+        },
+        {
+          "children" : null,
+          "type" : "Action",
+          "comment" : "",
+          "name" : "indirectStaging.json",
+          "relPath" : "actions/indirectStaging.json"
+        }
+      ],
+      "comment" : "",
+      "relPath" : "actions",
+      "type" : "Actions"
+    }
+  ],
+  "idPrefix" : "",
+  "mainAction" : "",
+  "name" : "aheadStaging"
+}
