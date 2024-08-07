@@ -9,7 +9,7 @@ The [Discussions](https://github.com/orgs/ARpatterns/discussions) is where the i
 # Contribute to the Patterns
 If you have an idea for a new pattern, start with a discussion in the respective category ([Discussions](https://github.com/orgs/ARpatterns/discussions)). Once the community is more or less of the same opinion, it's time to create your own branch and formulate the pattern. GitHub Docs has an article on how the ["fork and pull request" process](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project) works in detail. Once the pull request is created, the community will give feedback and eventually the maintainers will merge it.
 
-# Contribute to the Examples
+# Contribute to the Scenarios
 You have some examples of the patterns in use, you want to share? Follow the ["fork and pull request" process](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project) to add it to the examples and link it in the patterns it relates to.
 
 # Share
