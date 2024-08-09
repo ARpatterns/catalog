@@ -14,6 +14,6 @@ Some detectors halt after capturing a first occurrence of an entity and need to 
 |---|---|---|
 > detected.feature.chair ➕
 
-| on:altered	| if:`function('detected.feature.chair', 'visible') == false` | do:redetect | 
+| on:altered	| if:`visible('detected.feature.chair') == false` | do:redetect | 
 |---|---|---|
 > detected.feature.chair

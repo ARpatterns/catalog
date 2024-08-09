@@ -6,7 +6,7 @@ Active rules are processed asynchronously to avoid coordination and waiting. Cou
 
 | on:command	| →	| do:assign |
 |---|---|---|
-> data.flag = 1
+> `data.flag = 1`
 
 | as:stated	| if:data.flag == 1	| do:say | 
 |---|---|---|
@@ -14,7 +14,6 @@ Active rules are processed asynchronously to avoid coordination and waiting. Cou
 
 ## Examples
 
-| ARchi VR |
-|:---:|
-| [Button places Box](../examples/ARchiVR/button-places-box/description.md) |
-| <img align="right" src="../examples/ARchiVR/button-places-box/preview.gif" width="150px" /> |
+<a href="https://github.com/ARpatterns/declare/blob/main/AheadStaging/README.md#indirect-ahead-staging">
+  <img src="../assets/logos/archi_logo.png" width="60" alt="ARchi VR">
+</a>

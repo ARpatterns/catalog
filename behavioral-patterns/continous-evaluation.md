@@ -11,6 +11,6 @@ Temporally controlled repetition:
 
 Continuous query as repeated evaluation on each state change:
 
-| stated	| if:`function('red.box.id', 'proximity') < 1.2` | do:execute | 
+| stated	| if:`proximity('red.box.id') < 1.2` | do:execute | 
 |---|---|---|
-> function('https://___', 'getJSON') ◀
+> `getJSON('https://___')` ◀
