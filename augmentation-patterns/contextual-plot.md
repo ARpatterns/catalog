@@ -4,3 +4,5 @@ A contextual plot combines a variety of augmentation patterns and behavioural pa
 
 | placed: _multiple all over spatial context_ | aligned: _diverse_ |
 |---|---|
+
+TODO: Link to AR Scenarios
