@@ -33,7 +33,7 @@ leaving limited control over time and space for AR scenography (in contrast to f
 | [Pass-through Portal Pattern](augmentation-patterns/pass-through-portal.md)	| Present partly hidden 3D content to force user to go through	| Placing 3D scene behind a portal / behind an opening | 
 | [Staged Progression Pattern](augmentation-patterns/staged-progression.md) | Ordered, linear story: temporal order or interaction flow of 3D presentations	| Sequence of 3D content with forth and optionally back movements | 
 | [Attention Director Pattern](augmentation-patterns/attention-director.md) | Guide user’s attention to relevant place | Use animated pointers to direct user’s attention |
-| [Contextual Plot Pattern](augmentation-patterns/contextual-plot.md) | Spatio-temporal setting that aggregates diverse AR patterns to form a non-linear plot | Scenography of dynamic, interactive, and animated AR | 
+| [Contextual Plot Pattern](augmentation-patterns/contextual-plot.md) | Spatio-temporal setting that aggregates diverse AR patterns to form a scenario or a non-linear plot | Scenography of dynamic, interactive, and animated AR | 
 </details>
 
 ## Behavioral Patterns
@@ -59,7 +59,7 @@ The real world context during an AR session can be seen as stage. The dynamic be
 
 To design reactive systems, breaking down the system’s behavior into discrete events, conditions, and actions provides a structured and modular approach.
 
-Description of the [ECA Pattern](eca.md)
+Description of the [ECA Pattern](eca/)
 
 ## AR Pattern Diagram
 All of the patterns are documented in a standardized way explained in the [AR Pattern Diagram](https://github.com/ARpatterns/diagram) repository.

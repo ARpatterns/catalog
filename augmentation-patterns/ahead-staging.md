@@ -13,5 +13,5 @@ Ahead staging is a technique for presenting 3D content in a way that it is align
 ## Examples
 
 <a href="https://github.com/ARpatterns/declare/tree/main/AheadStaging">
-  <img src="../assets/logos/archi_logo.png" width="60" alt="ARchi VR">
+  <img src="../assets/logos/archi-vr.png" width="60" alt="ARchi VR">
 </a>
