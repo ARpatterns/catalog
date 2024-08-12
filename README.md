@@ -2,7 +2,7 @@
 
 **Catalog of AR Patterns: Event-driven Design Patterns in Creating Augmented Reality Experiences**
 
-This catalog is the main repository of the [AR Patterns](https://github.com/ARpatterns) community. It is split into three parts the [Augmentation Patterns](#behavioral-patterns), the [Behavioral Patterns](#behavioral-patterns) and the description of the overarching [Event-Condition-Action Pattern](#event-condition-action-pattern).
+This catalog is the main repository of the [AR Patterns](https://github.com/ARpatterns) community. It is split into three parts the [Augmentation Patterns](#behavioral-patterns), the [Behavioral Patterns](#behavioral-patterns) and the description of the overarching [Event-Condition-Action Pattern](eca/).
 
 ## Augmentation Patterns
 While a VR/3D designer is placing virtual objects using positions in a controlled world coordinate system, 
@@ -17,7 +17,7 @@ making users both spectators and performers. Their movements and perspectives in
 leaving limited control over time and space for AR scenography (in contrast to film, theater, and VR/3D/game design).
 
 <details>
-<summary><h3><i>📋 List of Augmentation Patterns</i></h3></summary>
+<summary><h3><i>List of Augmentation Patterns</i></h3></summary>
 
 | Augmentation Pattern	| Description	| Example |
 |---|---|---|
@@ -37,10 +37,10 @@ leaving limited control over time and space for AR scenography (in contrast to f
 </details>
 
 ## Behavioral Patterns
-The real world context during an AR session can be seen as stage. The dynamic behavior of an AR experience is determined by its [Event-Condition-Action](eca.md) rules, which are triggered by events occurring in the actual real-world context.
+The real world context during an AR session can be seen as stage. The dynamic behavior of an AR experience is determined by its [Event-Condition-Action](eca/) rules, which are triggered by events occurring in the actual real-world context.
 
 <details>
-<summary><h3><i>📋 List of Behavioral Patterns</i></h3></summary>
+<summary><h3><i>List of Behavioral Patterns</i></h3></summary>
 
 | Behavioral Pattern	| Description	| Example |
 |---|---|---|

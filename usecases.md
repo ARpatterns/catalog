@@ -1,18 +1,19 @@
 # AR Use Case Categories
 
 Main AR use cases to categorize AR scenarios:
-* Spatial Presentation 
-* Reality Capturing
-* Anchored Complement
-* Paint The World
-* Virtual Try-on
-* Contextual Design
-* Immersive Site Navigation
-* Situated Analytics
-* Spatio-temporal Workflow
-* [Spatial Collaboration](#spatial-collaboration)
+- [AR Use Case Categories](#ar-use-case-categories)
+  - [Spatial Presentation](#spatial-presentation)
+  - [Reality Capturing](#reality-capturing)
+  - [Anchored Complement](#anchored-complement)
+  - [Paint The World](#paint-the-world)
+  - [Virtual Try-on](#virtual-try-on)
+  - [Contextual Design](#contextual-design)
+  - [Immersive Site Navigation](#immersive-site-navigation)
+  - [Situated Analytics](#situated-analytics)
+  - [Spatio-temporal Workflow](#spatio-temporal-workflow)
+  - [Spatial Collaboration](#spatial-collaboration)
 
-Main AR use case categories with examples (which can serve as ideas and titles of AR scenarios).
+These main AR use case categories do list examples which can serve as ideas and titles of AR scenarios.
 
 
 ## Spatial Presentation 
