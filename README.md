@@ -42,10 +42,10 @@ The real world context during an AR session can be seen as stage. The dynamic be
 <details>
 <summary><h3><i>List of Behavioral Patterns</i></h3></summary>
 
-| Icon | Behavioral Pattern	| Description	| Example |
+| Icon | Pattern | Description | Example |
 |---|---|---|---|
-| <img src="assets/icons/Instant.png" width="140"> | [Instant Reaction Pattern](behavioral-patterns/instant-reaction.md)	| Direct execution of action triggered by invocation of rule	| Immediate command of action or call of function |
-| <img src="assets/icons/Timed.png" width="140"> | [Timed Reaction Pattern](behavioral-patterns/timed-reaction.md)	| Temporally executed action	| Delayed action or sequence of timed actions|
+| <img src="assets/icons/Instant.png" width="80"> | [Instant Reaction Pattern](behavioral-patterns/instant-reaction.md)	| Direct execution of action triggered by invocation of rule	| Immediate command of action or call of function |
+| <img src="assets/icons/Timed.png" width="80"> | [Timed Reaction Pattern](behavioral-patterns/timed-reaction.md)	| Temporally executed action	| Delayed action or sequence of timed actions|
 | <img src="assets/icons/Conditional.png" width="140"> | [Conditional Reaction Pattern](behavioral-patterns/conditional-reaction.md)	| Execute an action only when a condition is fulfilled after being triggered by event	| State-driven, asynchronous programming logic|
 | <img src="assets/icons/Continous.png" width="140"> | [Continous Evaluation Pattern](behavioral-patterns/continous-evaluation.md)	| Continuous polling of state changes that will triggers rules	|Continuous checks on value change, existence, visibility, proximity |
 | <img src="assets/icons/Notification.png" width="140"> | [Publish-Subscribe Notification Pattern](behavioral-patterns/publish-subscribe-notification.md)	| Receive notifications via a message queue from a subscribed system	| From speech recognition system or from WebRTC system in collaboration session |
