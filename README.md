@@ -19,21 +19,21 @@ leaving limited control over time and space for AR scenography (in contrast to f
 <details>
 <summary><h3><i>List of Augmentation Patterns</i></h3></summary>
 
-| Augmentation Pattern	| Description	| Example |
-|---|---|---|
-| [Geolocated Remark Pattern](augmentation-patterns/geolocated-remark.md)	| Triggering of action or of user feedback based on GPS location data or on address data	| Visual or audio feedback about location-based point of interest | 
-| [Segment Overlay Pattern](augmentation-patterns/segment-overlay.md)	| Presentation of 2D overlay on top of image segment detected in video stream	| Attaching 2D text description to a detected image segment | 
-| [Area Enrichment Pattern](augmentation-patterns/area-enrichment.md)	| Approximately placing 3D content at area of image segment| Presenting ballons in sky area | 
-| [Captured Twin Pattern](augmentation-patterns/captured-twin.md)	| Captured element of real world added to 3D data model	| Captured walls and doors and windows in an indoor AR session | 
-| [Anchored Supplement Pattern](augmentation-patterns/anchored-supplement.md)	| Presentation of 3D content aligned to detected entity for enhancement	| Attaching visual 3D elements to a detected image (marker) or captured object | 
-| [Superimposition Pattern](augmentation-patterns/superimposition.md)	| Presentation of 3D content replacing a detected entity	| Cover a detected object with a virtual one | 
-| [Tag-along Pattern](augmentation-patterns/tag-along.md)	| Presentation of 3D content within user’s field of view while head-locked	| Place 3D control panel that follows the user | 
-| [Hand/Palm Pop-up Pattern](augmentation-patterns/hand-palm-popup.md)	| Presentation of 3D content on hand or palm while visible	| Place 3D UI elements at palm of user's one hand | 
-| [Ahead Staging Pattern](augmentation-patterns/ahead-staging.md)	| Presentation of 3D content ahead of user	| Placing 3D item on floor in front of spectator | 
-| [Pass-through Portal Pattern](augmentation-patterns/pass-through-portal.md)	| Present partly hidden 3D content to force user to go through	| Placing 3D scene behind a portal / behind an opening | 
-| [Staged Progression Pattern](augmentation-patterns/staged-progression.md) | Ordered, linear story: temporal order or interaction flow of 3D presentations	| Sequence of 3D content with forth and optionally back movements | 
-| [Attention Director Pattern](augmentation-patterns/attention-director.md) | Guide user’s attention to relevant place | Use animated pointers to direct user’s attention |
-| [Contextual Plot Pattern](augmentation-patterns/contextual-plot.md) | Spatio-temporal setting that aggregates diverse AR patterns to form a scenario or a non-linear plot | Scenography of dynamic, interactive, and animated AR | 
+| Icon | Pattern | Description | Example |
+|---|---|---|---|
+| <img src="assets/icons/GeoLoc.png" width="60"> | [Geolocated Remark Pattern](augmentation-patterns/geolocated-remark.md)	| Triggering of action or of user feedback based on GPS location data or on address data	| Visual or audio feedback about location-based point of interest | 
+| <img src="assets/icons/Segment.png" width="60"> | [Segment Overlay Pattern](augmentation-patterns/segment-overlay.md)	| Presentation of 2D overlay on top of image segment detected in video stream	| Attaching 2D text description to a detected image segment | 
+| <img src="assets/icons/Area.png" width="60"> | [Area Enrichment Pattern](augmentation-patterns/area-enrichment.md)	| Approximately placing 3D content at area of image segment| Presenting ballons in sky area | 
+| <img src="assets/icons/Twin.png" width="60"> | [Captured Twin Pattern](augmentation-patterns/captured-twin.md)	| Captured element of real world added to 3D data model	| Captured walls and doors and windows in an indoor AR session | 
+| <img src="assets/icons/Anchor.png" width="60"> | [Anchored Supplement Pattern](augmentation-patterns/anchored-supplement.md)	| Presentation of 3D content aligned to detected entity for enhancement	| Attaching visual 3D elements to a detected image (marker) or captured object | 
+| <img src="assets/icons/Superimpose.png" width="60"> | [Superimposition Pattern](augmentation-patterns/superimposition.md)	| Presentation of 3D content replacing a detected entity	| Cover a detected object with a virtual one | 
+| <img src="assets/icons/TagAlong.png" width="60"> | [Tag-along Pattern](augmentation-patterns/tag-along.md)	| Presentation of 3D content within user’s field of view while head-locked	| Place 3D control panel that follows the user | 
+| <img src="assets/icons/HandPopup.png" width="60"> | [Hand/Palm Pop-up Pattern](augmentation-patterns/hand-palm-popup.md)	| Presentation of 3D content on hand or palm while visible	| Place 3D UI elements at palm of user's one hand | 
+| <img src="assets/icons/Stage.png" width="60"> | [Ahead Staging Pattern](augmentation-patterns/ahead-staging.md)	| Presentation of 3D content ahead of user	| Placing 3D item on floor in front of spectator | 
+| <img src="assets/icons/Portal.png" width="60"> | [Pass-through Portal Pattern](augmentation-patterns/pass-through-portal.md)	| Present partly hidden 3D content to force user to go through	| Placing 3D scene behind a portal / behind an opening | 
+| <img src="assets/icons/Progression.png" width="60"> | [Staged Progression Pattern](augmentation-patterns/staged-progression.md) | Ordered, linear story: temporal order or interaction flow of 3D presentations	| Sequence of 3D content with forth and optionally back movements | 
+| <img src="assets/icons/Attention.png" width="60"> | [Attention Director Pattern](augmentation-patterns/attention-director.md) | Guide user’s attention to relevant place | Use animated pointers to direct user’s attention |
+| <img src="assets/icons/Plot.png" width="60"> | [Contextual Plot Pattern](augmentation-patterns/contextual-plot.md) | Spatio-temporal setting that aggregates diverse AR patterns to form a scenario or a non-linear plot | Scenography of dynamic, interactive, and animated AR | 
 </details>
 
 ## Behavioral Patterns
@@ -44,15 +44,15 @@ The real world context during an AR session can be seen as stage. The dynamic be
 
 | Icon | Pattern | Description | Example |
 |---|---|---|---|
-| <img src="assets/icons/Instant.png" width="80"> | [Instant Reaction Pattern](behavioral-patterns/instant-reaction.md)	| Direct execution of action triggered by invocation of rule	| Immediate command of action or call of function |
-| <img src="assets/icons/Timed.png" width="80"> | [Timed Reaction Pattern](behavioral-patterns/timed-reaction.md)	| Temporally executed action	| Delayed action or sequence of timed actions|
-| <img src="assets/icons/Conditional.png" width="140"> | [Conditional Reaction Pattern](behavioral-patterns/conditional-reaction.md)	| Execute an action only when a condition is fulfilled after being triggered by event	| State-driven, asynchronous programming logic|
-| <img src="assets/icons/Continous.png" width="140"> | [Continous Evaluation Pattern](behavioral-patterns/continous-evaluation.md)	| Continuous polling of state changes that will triggers rules	|Continuous checks on value change, existence, visibility, proximity |
-| <img src="assets/icons/Notification.png" width="140"> | [Publish-Subscribe Notification Pattern](behavioral-patterns/publish-subscribe-notification.md)	| Receive notifications via a message queue from a subscribed system	| From speech recognition system or from WebRTC system in collaboration session |
-| <img src="assets/icons/Request.png" width="140"> | [Request-Response Pattern](behavioral-patterns/request-response.md)	| Remote procedure call resulting in asynchronously receiving ECA rules or media assets	| REST API call via a Web URL to load rules or assets (images, 3D models)|
-| <img src="assets/icons/Chain.png" width="140"> | [Chain Reaction Pattern](behavioral-patterns/chain-reaction.md)	| Course of events processed as sequence of indirect reactions of running subsequenced rules	| Rule changing data that will trigger a rule to update an item’s visual as a follow-up |
-| <img src="assets/icons/Flip.png" width="140"> | [Complementary Reactions Pattern](behavioral-patterns/complementary-reactions.md)	| Two active rules with opposite reactions	|Reacting on toggling states with two complementary active rules|
-| <img src="assets/icons/Reactivate.png" width="140"> | [Detector Reactivation Pattern](behavioral-patterns/detector-reactivation.md)	| Reactivate detector with only-once reaction	|Reactivate detector after resulting augmentation is no longer existing |
+| <img src="assets/icons/Instant.png" width="60"> | [Instant Reaction Pattern](behavioral-patterns/instant-reaction.md)	| Direct execution of action triggered by invocation of rule	| Immediate command of action or call of function |
+| <img src="assets/icons/Timed.png" width="60"> | [Timed Reaction Pattern](behavioral-patterns/timed-reaction.md)	| Temporally executed action	| Delayed action or sequence of timed actions|
+| <img src="assets/icons/Conditional.png" width="60"> | [Conditional Reaction Pattern](behavioral-patterns/conditional-reaction.md)	| Execute an action only when a condition is fulfilled after being triggered by event	| State-driven, asynchronous programming logic|
+| <img src="assets/icons/Continous.png" width="60"> | [Continous Evaluation Pattern](behavioral-patterns/continous-evaluation.md)	| Continuous polling of state changes that will triggers rules	|Continuous checks on value change, existence, visibility, proximity |
+| <img src="assets/icons/Notification.png" width="60"> | [Publish-Subscribe Notification Pattern](behavioral-patterns/publish-subscribe-notification.md)	| Receive notifications via a message queue from a subscribed system	| From speech recognition system or from WebRTC system in collaboration session |
+| <img src="assets/icons/Request.png" width="60"> | [Request-Response Pattern](behavioral-patterns/request-response.md)	| Remote procedure call resulting in asynchronously receiving ECA rules or media assets	| REST API call via a Web URL to load rules or assets (images, 3D models)|
+| <img src="assets/icons/Chain.png" width="60"> | [Chain Reaction Pattern](behavioral-patterns/chain-reaction.md)	| Course of events processed as sequence of indirect reactions of running subsequenced rules	| Rule changing data that will trigger a rule to update an item’s visual as a follow-up |
+| <img src="assets/icons/Flip.png" width="60"> | [Complementary Reactions Pattern](behavioral-patterns/complementary-reactions.md)	| Two active rules with opposite reactions	|Reacting on toggling states with two complementary active rules|
+| <img src="assets/icons/Reactivate.png" width="60"> | [Detector Reactivation Pattern](behavioral-patterns/detector-reactivation.md)	| Reactivate detector with only-once reaction	|Reactivate detector after resulting augmentation is no longer existing |
 </details>
 
 ## Event-Condition-Action Pattern
