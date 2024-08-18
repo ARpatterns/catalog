@@ -31,6 +31,7 @@ Capture space and objects in real environmet
 Annotate existing real objects
 - Spatial information annotating / embedding
 - Real Object Enrichment
+- Virtual cutaway: inner body visualization through hole, virtually remove existing real objects
 - Text label translation
 - Contextualized Documentation
 - content augmentation, Magic enrichment, magic book: Paper/image to 3D vis, marker popup, emerging 3D model
