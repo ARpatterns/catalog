@@ -16,7 +16,7 @@ that can be used to stage AR experiences. In AR, the real world serves as the sp
 making users both spectators and performers. Their movements and perspectives influence the firing of events, 
 leaving limited control over time and space for AR scenography (in contrast to film, theater, and VR/3D/game design).
 
-<details>
+<details open>
 <summary><h3><i>List of Augmentation Patterns</i></h3></summary>
 
 | Icon | Pattern | Description | Example |
@@ -39,7 +39,7 @@ leaving limited control over time and space for AR scenography (in contrast to f
 ## Behavioral Patterns
 The real world context during an AR session can be seen as stage. The dynamic behavior of an AR experience is determined by its [Event-Condition-Action](eca/) rules, which are triggered by events occurring in the actual real-world context.
 
-<details>
+<details open>
 <summary><h3><i>List of Behavioral Patterns</i></h3></summary>
 
 | Icon | Pattern | Description | Example |
