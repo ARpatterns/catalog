@@ -2,26 +2,28 @@
 
 List of technology platforms showcasing AR patterns (in alphabetic order).
 
-## Apple Reality Composer
+## Adobe Aero
 
 <img src="assets/logos/adobe-aero.png" width="120" align="right">
 
-- _Software Stack_: Apple Quicklook presenting USDZ documents with AR extensions
+- _Software Stack_: [Adobe Aero](https://www.adobe.com/products/aero.html)
+- _Supported Devices_: handheld iOS devices (iPhones, iPads)
+- _Editor Environment_: [Adobe Aero](https://www.adobe.com/products/aero.html) for iOS, Mac (Beta), and Windows (Beta)
+- _Development Method_: declarative no-code using Trigger-Action lists
+- _AR Patterns Examples_: tbd
+
+ 
+
+## Apple Reality Composer
+
+<img src="assets/logos/reality-composer.png" width="120" align="right">
+
+- _Software Stack_: [Apple Quicklook](https://developer.apple.com/augmented-reality/quick-look/) presenting [USDZ](https://openusd.org) documents with AR extensions
 - _Supported Devices_: handheld iOS devices (iPhones, iPads), Apple Vision Pro
 - _Editor Environment_: [Reality Composer](https://developer.apple.com/augmented-reality/tools/)
 - _Development Method_: declarative no-code using Trigger-Action lists
 - _AR Patterns Examples_: tbd
-- 
-## Adobe Aero
-
-<img src="assets/logos/reality-composer.png" width="120" align="right">
-
-- _Software Stack_: [Adobe Aero](https://www.adobe.com/products/aero.html)
-- _Supported Devices_: handheld iOS devices (iPhones, iPads)
-- _Editor Environment_: Adobe Aero for iOS, Mac (Beta), and Windows (Beta)
-- _Development Method_: declarative no-code using Trigger-Action lists
-- _AR Patterns Examples_: tbd
-- 
+  
 ## ARchi VR
 
 <img src="assets/logos/archi-vr.png" width="120" align="right">
