@@ -22,7 +22,7 @@ List of technology platforms showcasing AR patterns (in alphabetic order).
 - _Supported Devices_: handheld iOS devices (iPhones, iPads), Apple Vision Pro
 - _Editor Environment_: [Reality Composer](https://developer.apple.com/augmented-reality/tools/)
 - _Development Method_: declarative no-code using Trigger-Action lists
-- _AR Patterns Examples_: tbd
+- _AR Patterns Examples_: [https://github.com/ARpatterns/AppleRealityComposer/](https://github.com/ARpatterns/AppleRealityComposer/)
   
 ## ARchi VR
 
