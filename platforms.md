@@ -33,3 +33,13 @@ List of technology platforms showcasing AR patterns (in alphabetic order).
 - _Editor Environment_: [ARchi Composer](https://service.metason.net/ar/docu/#archi-composer)
 - _Development Method_: declarative low-code using Event-Condition-Action rules
 - _AR Patterns Examples_: [https://github.com/ARpatterns/declare/](https://github.com/ARpatterns/declare/)
+
+## Snap AR
+
+<img src="assets/logos/snap-ar.png" width="120" align="right">
+
+- _Software Stack_: [Snap AR](https://ar.snap.com) for [Snapchat](https://www.snapchat.com) App
+- _Supported Devices_: handheld devices
+- _Editor Environment_: [Lens Studio](https://ar.snap.com/lens-studio)
+- _Development Method_: No-code editing and low-code scripting
+- _AR Patterns Examples_: [https://github.com/ARpatterns/declSnapARare/](https://github.com/ARpatterns/SnapAR/)
