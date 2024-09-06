@@ -12,8 +12,6 @@ List of technology platforms showcasing AR patterns (in alphabetic order).
 - _Development Method_: declarative no-code using Trigger-Action lists
 - _AR Patterns Examples_: tbd
 
- 
-
 ## Apple Reality Composer
 
 <img src="assets/logos/reality-composer.png" width="120" align="right">
@@ -43,3 +41,13 @@ List of technology platforms showcasing AR patterns (in alphabetic order).
 - _Editor Environment_: [Lens Studio](https://ar.snap.com/lens-studio)
 - _Development Method_: No-code editing and low-code scripting
 - _AR Patterns Examples_: [https://github.com/ARpatterns/SnapAR/](https://github.com/ARpatterns/SnapAR/)
+
+## Unity AR Foundation
+
+<img src="assets/logos/unity-ar.png" width="120" align="right">
+
+- _Software Stack_: [Unity AR Foundation](https://unity.com/unity/features/arfoundation) 
+- _Supported Devices_: handheld and head-mounted devices (Android, iOS, visionOS, HoloLens, Meta Quest)
+- _Editor Environment_: [Unity Engine](https://unity.com/products/unity-engine)
+- _Development Method_: Full-code C# programming
+- _AR Patterns Examples_: tbd
