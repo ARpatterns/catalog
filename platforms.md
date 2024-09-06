@@ -42,4 +42,4 @@ List of technology platforms showcasing AR patterns (in alphabetic order).
 - _Supported Devices_: handheld devices
 - _Editor Environment_: [Lens Studio](https://ar.snap.com/lens-studio)
 - _Development Method_: No-code editing and low-code scripting
-- _AR Patterns Examples_: [https://github.com/ARpatterns/declSnapARare/](https://github.com/ARpatterns/SnapAR/)
+- _AR Patterns Examples_: [https://github.com/ARpatterns/SnapAR/](https://github.com/ARpatterns/SnapAR/)
