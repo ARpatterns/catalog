@@ -2,7 +2,7 @@
 
 **Catalog of AR Patterns: Event-driven Design Patterns in Creating Augmented Reality Experiences**
 
-This catalog is the main repository of the [AR Patterns](https://github.com/ARpatterns) community. It is split into three parts the [Augmentation Patterns](#behavioral-patterns), the [Behavioral Patterns](#behavioral-patterns) and the description of the overarching [Event-Condition-Action Pattern](eca/).
+This catalog is the main repository of the [AR Patterns](https://github.com/ARpatterns) community. It is split into three parts the [Augmentation Patterns](#behavioral-patterns), the [Behavioral Patterns](#behavioral-patterns) and the description of the overarching [Event-Condition-Action Pattern](#event-condition-action-pattern).
 
 ## Augmentation Patterns
 While a VR/3D designer is placing virtual objects using positions in a controlled world coordinate system, 
@@ -57,12 +57,10 @@ The real world context during an AR session can be seen as stage. The dynamic be
 
 ## Event-Condition-Action Pattern
 
-To design reactive systems, breaking down the system’s behavior into discrete events, conditions, and actions provides a structured and modular approach.
+To design reactive systems, breaking down the system’s behavior into discrete events, conditions, and actions provides a structured and modular approach.  **Event-Condition-Action** (ECA) rules serve as a core pattern for explaining reactive AR applications. 
+Learn more on using ECA patterns at [ECA Pattern](eca/)
 
-Description of the [ECA Pattern](eca/)
-
-## ECA Diagram
-All of the patterns are documented in a standardized way explained in the [ECA Diagram](https://github.com/ARpatterns/diagram) repository.
+Based on the core ECA pattern, all other AR patterns are documented in a standardized way explained in the [ECA Diagram](https://github.com/ARpatterns/diagram) repository.
 
 ## How to Contribute
 This is a community-driven catalog, which means we need you as a contributor! Join us in creating new patterns and enhancing the existing ones.
