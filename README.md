@@ -61,8 +61,8 @@ To design reactive systems, breaking down the system’s behavior into discrete 
 
 Description of the [ECA Pattern](eca/)
 
-## AR Pattern Diagram
-All of the patterns are documented in a standardized way explained in the [AR Pattern Diagram](https://github.com/ARpatterns/diagram) repository.
+## ECA Diagram
+All of the patterns are documented in a standardized way explained in the [ECA Diagram](https://github.com/ARpatterns/diagram) repository.
 
 ## How to Contribute
 This is a community-driven catalog, which means we need you as a contributor! Join us in creating new patterns and enhancing the existing ones.
