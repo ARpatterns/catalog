@@ -11,9 +11,3 @@ Active rules are processed asynchronously to avoid coordination and waiting. Cou
 | as:stated	| if:data.flag == 1	| do:say | 
 |---|---|---|
 > "Indirect Reaction Pattern" 🗣
-
-## Examples
-
-<a href="https://github.com/ARpatterns/declare/blob/main/AheadStaging/README.md#indirect-ahead-staging">
-  <img src="../assets/logos/archi_logo.png" width="60" alt="ARchi VR">
-</a>

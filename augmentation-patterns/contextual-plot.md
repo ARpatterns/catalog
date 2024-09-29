@@ -5,4 +5,4 @@ A contextual plot combines a variety of augmentation patterns and behavioural pa
 * _Placed_: multiple all over spatial context
 * _Aligned_: diverse
 
-TODO: Link to AR Scenarios
+[AR Scenarios](https://arpatterns.dev/scenarios) are contextual plots combining various AR patterns in a technology-specfic implementation.
