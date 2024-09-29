@@ -4,6 +4,6 @@ An ECA rule’s condition is tested on the data available in the current AR sess
 
 | on:change	| if:`items.@count >= 1` | do:say | 
 |---|---|---|
-> "Conditional Reaction Pattern" 🗣
+> "Nice, you added an item." 🗣
 
 The built-in state management is observing model as well as data elements and dispatches the processing of reactions.

@@ -15,14 +15,14 @@ Some detectors halt after capturing a first occurrence of an entity and need to 
 > | _on:detect_ | &rarr; | _do:add to AR anchor_ |
 > |---|---|---|
 > 
->> 'detected.plane.seat' ➕
+>> 'seat.marker' ➕
 > 
-> | _as:stated_ | _if:`visible('detected.plane.seat') == false`_ | _do:remove_ |
+> | _as:stated_ | _if:`visible('seat.marker') == false`_ | _do:remove_ |
 > |---|---|---|
 > 
->> 'detected.plane.seat' ❌
+>> 'seat.marker' ❌
  
- | in:300 |  &rarr; | do:redetect |
+ | in:300 |  &rarr; | do:redetect:plane |
  |---|---|---|
-> 'detect.plane.seat'
+> 'seat'
  

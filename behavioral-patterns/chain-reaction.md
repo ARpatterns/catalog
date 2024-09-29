@@ -10,4 +10,4 @@ Active rules are processed asynchronously to avoid coordination and waiting. Cou
 
 | as:stated	| if:data.flag == 1	| do:say | 
 |---|---|---|
-> "Indirect Reaction Pattern" 🗣
+> "This is an indirect reaction." 🗣
