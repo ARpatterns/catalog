@@ -44,14 +44,14 @@ Additionally spatial functions can be included in condition evaluations such as:
 | Visibility | `visible(ID) == 1` | is item with ID visible to user |
 | Proximity | `proximity(ID) <= 1.5` | distance in meters from user (virtual camera) to item with ID |
 | Gazing | `gazingAt(ID) == 1` | is user gazing at item with ID |
-| Geo-Distance | `distance(_latitude, _longitude) < 50.0` | distance in meters from user to place in latitude/longitude |
+| Geo-Distance | `distance(_lat, _long) < 50.0` | distance in meters from user to place in latitude/longitude |
 
 ## Actions in AR Applications
 Actions in AR applications are mainly concerned with manipulating augmentation items and their visual representation, or with handling user activities (GUI reactions, audible feedback). Actions are expressed as `do:something` statements.
 
 Staging of augmentation items is based on the content composition principle and executed by `do:add` actions. It involves assigning unique identifiers to visual and audible items and positioning them within the observed world relative to anchors of detected entities.
 
-Common Actions in AR applications listed by category.
+Common Actions in AR applications listed by category:
 
 * [Item-Related Actions](actions.md#item-related-actions)
 * [Visual-Related Actions](actions.md#visual-related-actions)
