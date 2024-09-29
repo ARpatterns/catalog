@@ -58,9 +58,9 @@ The real world context during an AR session can be seen as stage. The dynamic be
 ## Event-Condition-Action Pattern
 
 To design reactive systems, breaking down the system’s behavior into discrete events, conditions, and actions provides a structured and modular approach.  **Event-Condition-Action** (ECA) rules serve as a core pattern for explaining reactive AR applications. 
-Learn more on using ECA patterns at [ECA Pattern](eca/)
+Learn more on using the [ECA Pattern](eca/)
 
-Based on the core ECA pattern, all other AR patterns are documented in a standardized way explained in the [ECA Diagram](https://github.com/ARpatterns/diagram) repository.
+Based on the core ECA pattern, all other AR patterns can be documented in a standardized way by the [ECA Diagram](https://github.com/ARpatterns/diagram).
 
 ## How to Contribute
 This is a community-driven catalog, which means we need you as a contributor! Join us in creating new patterns and enhancing the existing ones.
