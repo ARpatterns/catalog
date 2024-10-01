@@ -6,10 +6,10 @@ Complementary reactions are constructed using two rules that have opposite condi
 |---|---|---|
 > red.box ➕
 
-| on:altered	| if:`function('red.box', 'visible') == true`	| do:say | 
+| on:altered	| if:`visible('red.box') == true`	| do:say | 
 |---|---|---|
-> "you see box" 🗣
+> "You see a red box." 🗣
 
-| on:altered	| if:`function('red.box', 'visible') == false` | do:say | 
+| on:altered	| if:`visible('red.box') == false` | do:say | 
 |---|---|---|
-> "now you don't" 🗣
+> "Now you don't." 🗣

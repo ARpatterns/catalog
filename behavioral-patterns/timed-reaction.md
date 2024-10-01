@@ -4,7 +4,7 @@ Timed reactions are ECA rules that are fired after a given interval to carry out
 
 | in:5	| →	| do:say | 
 |---|---|---|
-> "Timed Reaction Pattern" 🗣
+> "This is a delayed reaction." 🗣
 
 A sequence of timed reactions as an example:
 
@@ -14,12 +14,12 @@ A sequence of timed reactions as an example:
 
 | in:4	| →	| do:say | 
 |---|---|---|
-> "Timed Reaction Pattern" 🗣
+> "This is a delayed reaction." 🗣
 
-| in:7	| →	| do:say | 
+| in:9	| →	| do:say | 
 |---|---|---|
 > "Good bye" 🗣
 
-| in:10	| →	| do:exit | 
+| in:12	| →	| do:exit | 
 |---|---|---|
 > stop AR session ◾

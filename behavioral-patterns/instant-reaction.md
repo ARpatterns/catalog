@@ -4,4 +4,4 @@ An instant reaction is directly triggered by the invocation of a rule and causes
 
 | on:command	| →	| do:say | 
 |---|---|---|
-> "Immediate Reaction Pattern" 🗣
+> "Hello" 🗣

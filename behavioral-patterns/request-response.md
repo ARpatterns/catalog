@@ -10,6 +10,6 @@ Remote request with async response:
 > 
 > | on:command	| →	| do:say | 
 > |---|---|---|
->> "Async Response Reaction" 🗣
+>> "Just received response from a request." 🗣
 
 Hint: REST is stateless, therefore handle state on client.
