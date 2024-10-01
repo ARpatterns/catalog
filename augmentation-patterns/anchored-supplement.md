@@ -1,7 +1,7 @@
 # Anchored Supplement Pattern
 > Shows an augmentation in relation to something that was detected
 
-![Example of the Anchored Supplement Pattern](augmentation-patterns/images/AchoredSupplement.png)
+![Example of the Anchored Supplement Pattern](images/AchoredSupplement.png)
 
 ## What is the Anchored Supplement Pattern?
 This pattern shows an augmentation that adds context to something that was detected. For example, after detecting a famous painting, a description of this painting could be shown next to the painting.
