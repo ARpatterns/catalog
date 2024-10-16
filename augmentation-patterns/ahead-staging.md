@@ -27,6 +27,7 @@ It is recommended to prompt users to move their device in order to scan the envi
 ## Technical Considerations
 The ahead staging pattern generally works best if users are allowed to position augmentations themselves, allowing themselves to set the anchor on features that they know are reliable. Therefore, the ahead staging pattern is often preceded by an environment scan, in which the user moves their phone to allow the AR framework to detect environmental features that can serve as anchoring points.
 The orientation of the augmentation can be chosen among the following or any additional point of reference.
+
 | <img src="../assets/images/withobj.jpg" width="200"> | <img src="../assets/images/north.jpg" width="200"> | <img src="../assets/images/touser.jpg" width="200"> | <img src="../assets/images/towall.jpg" width="200"> |
 
 ## Scenarios and Examples
