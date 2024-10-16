@@ -19,32 +19,20 @@ It is recommended to prompt users to move their device in order to scan the envi
 * _Camera_: Rear
 
 ## Related Patterns
-
+- [**Attention Director Pattern:**](attention-director.md) The attention director pattern is used to draw attention to a specific area in the AR scene. It is often combined with the Ahead Staging pattern.
+- [**Tag-Along Pattern:**](tag-along.md) Contrary to the ahead stagining pattern, the tag-along pattern anchors AR content on the user or the AR device, moving—or tagging along—with them. While initial setup may be similar, objects placed with the ahead-staging pattern will remain in place, and not move along with the user.
+- [**Tag-Along Pattern:**](tag-along.md)
 
 ## Technical Considerations
-
-## What is the Anchored Supplement Pattern?
-This pattern shows an augmentation that adds context to something that was detected. For example, after detecting a famous painting, a description of this painting could be shown next to the painting.
-This pattern is applied whenever an augmentation is shown in a fixed spacial relationship to a detected entity. In the example above, the description—i.e. the _supplement_—would be shown next to the detected painting—i.e. the _anchor_.  The anchored supplement pattern has the intention of adding context to real-world entities in order to describe them or otherwise augment them.
-This pattern is especially well suited to training and educational applications or may also have its uses in any case where the real world can benefit from contextual augmentations.
-
-## Requirements
-The anchored supplement can apply if a specific entity is detected with has a point of origin which can be designated the _anchor_. This allows the relative positioning of the _supplement_. For example, showing a 3D Object anchored in a detected tag constitutes a use of this pattern. 
-The anchored supplement pattern requires that the detected entity remain visible and that the supplement be placed at a fixed spacial relationship to it or the user.
-
-## Related Patterns
-- [**Segment Overlay Pattern:**](segment-overlay.md) When the entity originates from camera image segmentation rather than than the detection of an entity, the segment overlay pattern applies. For example, detecting an image segment as the sky, and then recoloring with AR 
-- **Hand/Palm Pop-Up Pattern:** When the detected entity is a hand or other body part in a mixed-reality context and the goal of the augmentation is to add specific functionality with UX elements, the Hand/Palm Pop-Up Pattern applies.
-- **Superimposition:** In the anchored supplement pattern, the detected object should not be covered. If the detected object is to be covered up with a replacement, the superimposition applies. For example, if a painting is covered up with another painting.
-
-## Technical Considerations
-Are there any?
+The ahead staging pattern generally works best if users are allowed to position augmentations themselves, allowing themselves to set the anchor on features that they know are reliable. Therefore, the ahead staging pattern is often preceded by an environment scan, in which the user moves their phone to allow the AR framework to detect environmental features that can serve as anchoring points.
+The orientation of the augmentation can be chosen among the following or any additional point of reference.
+| <img src="../assets/images/withobj.jpg" width="200"> | <img src="../assets/images/north.jpg" width="200"> | <img src="../assets/images/touser.jpg" width="200"> | <img src="../assets/images/towall.jpg" width="200"> |
 
 ## Scenarios and Examples
-- Shopping: Show price tags
-- Museums: Provide contextual information about exhibits
-- Manufacturing: Guide product assembly with augmented support information
+- Shopping: Placing a piece of furniture in the room before buying
+- Gaming: Place game characters, objects or the playing field on a real-world surface.
+- Education: Place virtual objects in the real room to experience their size or to examine them in detail
 
-## Code
-| placed: _relative to object_ | aligned: _with object or towards object / user_ |
-|---|---|
+## Event-Condition-Action Diagram
+|:---:|:---:|:---:|:---:|
+| with object | geo-referenced | towards user | to environment |

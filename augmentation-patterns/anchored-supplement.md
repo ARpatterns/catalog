@@ -20,8 +20,8 @@ The anchored supplement pattern requires that the detected entity remain visible
 
 ## Related Patterns
 - [**Segment Overlay Pattern:**](segment-overlay.md) When the entity originates from camera image segmentation rather than than the detection of an entity, the segment overlay pattern applies. For example, detecting an image segment as the sky, and then recoloring with AR 
-- **Hand/Palm Pop-Up Pattern:** When the detected entity is a hand or other body part in a mixed-reality context and the goal of the augmentation is to add specific functionality with UX elements, the Hand/Palm Pop-Up Pattern applies.
-- **Superimposition:** In the anchored supplement pattern, the detected object should not be covered. If the detected object is to be covered up with a replacement, the superimposition applies. For example, if a painting is covered up with another painting.
+- [**Hand/Palm Pop-Up Pattern:**](hand-palm-popup.md) When the detected entity is a hand or other body part in a mixed-reality context and the goal of the augmentation is to add specific functionality with UX elements, the Hand/Palm Pop-Up Pattern applies.
+- [**Superimposition:**](superimposition.md) In the anchored supplement pattern, the detected object should not be covered. If the detected object is to be covered up with a replacement, the superimposition applies. For example, if a painting is covered up with another painting.
 
 ## Technical Considerations
 The anchored supplement pattern is especially useful in conjuction with __AR tags__. It may also be useful in conjunction with various __object or image recognition techniques__. 
@@ -32,6 +32,6 @@ In this pattern, issues can arise from the imprecise or ambiguous recognition of
 - Museums: Provide contextual information about exhibits
 - Manufacturing: Guide product assembly with augmented support information
 
-## Code
+## Event-Condition-Action Diagram
 | placed: _relative to object_ | aligned: _with object or towards object / user_ |
 |---|---|
