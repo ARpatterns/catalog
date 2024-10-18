@@ -38,3 +38,7 @@ In this pattern, issues can arise from the imprecise or ambiguous recognition of
 ## Event-Condition-Action Diagram
 | placed: _relative to object_ | aligned: _with object or towards object / user_ |
 |---|---|
+
+## Additional Illustrations
+
+![Example of Anchored Supplement Pattern](images/achored_supplement_2.png "Plant Recognition App"){width=47%} ![Example of Anchored Supplement Pattern](images/achored_supplement_3.png "Plant Recognition App"){width=47%}
