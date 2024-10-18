@@ -12,6 +12,7 @@ This pattern is applied whenever an augmentation is shown in a fixed spacial rel
 The anchored supplement pattern is especially well suited to training and educational applications or may also have its uses in any case where the real world can benefit from contextual augmentations. It is generally used with the rear camera.
 
 **Additional Visualizations**
+
 <img src="images/anchored_supplement_2.png" alt="Plant recognition using the Anchored Supplement pattern" width="48%">&nbsp;<img src="images/anchored_supplement_3.png" alt="Object used as anchor for an augmentation using the Anchored Supplement pattern" width="48%">
 
 ## Requirements
