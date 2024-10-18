@@ -11,6 +11,9 @@ This pattern is applied whenever an augmentation is shown in a fixed spacial rel
 
 The anchored supplement pattern is especially well suited to training and educational applications or may also have its uses in any case where the real world can benefit from contextual augmentations. It is generally used with the rear camera.
 
+**Additional Visualizations**
+<img src="images/anchored_supplement_2.png" alt="Plant recognition using the Anchored Supplement pattern" width="48%">&nbsp;<img src="images/anchored_supplement_3.png" alt="Object used as anchor for an augmentation using the Anchored Supplement pattern" width="48%">
+
 ## Requirements
 The anchored supplement can apply if a specific entity is detected with has a point of origin which can be designated the _anchor_. This allows the relative positioning of the _supplement_. For example, showing a 3D Object anchored in a detected tag constitutes a use of this pattern. 
 The anchored supplement pattern requires that the detected entity remain visible and that the supplement be placed at a fixed spacial relationship to it or the user. The anchored supplement is often used in conjunction with AR tags.
@@ -41,4 +44,5 @@ In this pattern, issues can arise from the imprecise or ambiguous recognition of
 
 ## Additional Illustrations
 
-<img src="images/anchored_supplement_2.png" alt="Plant recognition using the Anchored Supplement pattern" width="47%">&nbsp;<img src="images/anchored_supplement_3.png" alt="Object used as anchor for an augmentation using the Anchored Supplement pattern" width="47%">
+
+
