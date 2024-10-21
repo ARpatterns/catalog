@@ -1,6 +1,6 @@
 # Anchored Supplement Pattern
 
-> Shows an augmentation in relation to something that was detected
+> Shows an augmentation next to a detected object or feature
 
 ![Example of Anchored Supplement Pattern](images/AchoredSupplement.png)
 
