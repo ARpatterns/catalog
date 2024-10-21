@@ -4,6 +4,8 @@
 
 <img src="images/TagAlong.png">
 
+# What Is The Tag-Along Pattern
+
 An augmentation following the _Tag-Along_ pattern always moves together with the user (it _tags along_). Typically, such an augmentation also always attempts to stay within the user’s view range. The main advantage of tag-along augmentations is that they ensure the presented interaction elements are always visible and easily accessible to the user. 
 User interface components in AR applications are a typical example of this pattern: These UI elements must always stay within the user's view range but are still spacially located within the AR scene.
 A _Tag-Along_ augmentation is typically oriented towards the user’s position, centered on the user's face or device, using billboarding techniques. The main advantage of tag-along augmentations is that they ensure the presented interaction elements are always visible and easily accessible to the user. 
