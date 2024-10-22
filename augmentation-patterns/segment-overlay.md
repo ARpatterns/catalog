@@ -2,7 +2,7 @@
 > Recognize objects or features and augment or replace them
 <img src="images/SegmentOverlay.png">
 
-## What is the Segment Overlay?
+## What is the Segment Overlay Pattern?
 The Segment Overlay Pattern applies when parts of an image (_segments_) are _overlaid_ with augmentations. Examples are to change the color of the user's lips in a social media filter, draw bounding boxes around recognized objects in an object recognition app, or highlight detected text in a dictionary app able to recognize text in the real world.
 The Segment Overlay pattern is best understood when highlighting its differences with seemingly similar patterns, such as the [Area Enrichment](area-enrichment.md) and the [Superimposition](superimposition.md) patterns. The Area Enrichment pattern has the intention of replacing large areas in the camera image with a 3D-Augmentation to add spaciality, while the Superimposition pattern is usually used with the intention of placing a virtual 3D-Object above a real world object while understanding and matching its orientation. By contrast, the segment overlay pattern often does not try to understand orientation of the object, but instead to infer __meaning__, for example, recognize and track landmarks, body parts or orther image segments. 
 The segment overlay patterns is especially useful when the task is to recognize and augment some of the following:
