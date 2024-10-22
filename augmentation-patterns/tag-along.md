@@ -1,10 +1,9 @@
 # Tag-Along Pattern
-
 > An augmentation that moves together with the user
 
 ![Tag-Along](images/TagAlong.png)
 
-# What Is The Tag-Along Pattern
+## What Is The Tag-Along Pattern?
 
 An augmentation following the _Tag-Along_ pattern always moves together with the user (it _tags along_). Typically, such an augmentation also always attempts to stay within the user’s view range. The main advantage of tag-along augmentations is that they ensure the presented interaction elements are always visible and easily accessible to the user.
 
@@ -24,20 +23,18 @@ We differentiate between two types of movement constraints:
 
 _Tag-Along_ augmentations are not used in every scenario where something moves with the user. For example, a virtual dog walking beside the user is better suited for the [**Ahead Staging Pattern**](ahead-staging.md) and [**Captured Twin Pattern**](captured-twin.md), as the virtual dog adjusts to environmental features (ground, walls, etc.) and is anchored in the scene, not to the user.
 
-### Characteristics
-
 - **_Anchored_**: On the user
 - **_Placed_**: Constraint ahead of the user
 - **_Aligned_**: Facing toward the user
 - **_Camera_**: Rear-facing
 
-## Similar Patterns
+## Related Patterns
 
 - [**Hand/Palm Pop-Up Pattern**](hand-palm-popup.md): While also primarily useful for UI components, this pattern attaches elements to the user's hand instead of centering them on the user's position.
   
 - [**Ahead Staging Pattern**](ahead-staging.md): In the _Ahead Staging Pattern_, augmentations are initially placed ahead of the user, but they are world-locked and do not move with the user. See the virtual dog example in the [Requirements](#requirements) section for a more detailed explanation.
 
-## Technical Requirements
+## Technical Considerations
 
 Designing _Tag-Along_ augmentations presents several technical challenges because their frequent use in AR, XR, and VR applications has created high expectations for usability. A _Tag-Along_ augmentation stays with the user and is not world-locked but is attached to the scene’s camera. Some key considerations include:
 
@@ -54,3 +51,5 @@ Designing _Tag-Along_ augmentations presents several technical challenges becaus
 - **Gaming**: In first-person shooter games, HUD elements that follow the player's movement and remain visible in their field of view use the _Tag-Along_ pattern to ensure quick access to important game information without obstructing the player’s view of the game world.
 
 - **Design Applications**: In 3D design apps, the _Tag-Along_ pattern can be used for tool menus that are kept accessible but can also be moved or hidden to prevent cluttering the user’s workspace.
+
+## Event-Condition-Action Diagram
