@@ -2,6 +2,8 @@
 
 The continuous evaluation of rules can be driven by a constant time interval or by each state change of the data model. A built-in state management is observing the data model and does dispatch the processing of rules according to the [data-driven events](../eca/events.md#data-driven-events) that are bound to the ECA rules.
 
+## ECA Diagram
+
 Temporally controlled repetition:
 
 | repeated each 60 secs	| →	| do:say | 
