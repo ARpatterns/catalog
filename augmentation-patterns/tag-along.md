@@ -51,5 +51,3 @@ Designing _Tag-Along_ augmentations presents several technical challenges becaus
 - **Gaming**: In first-person shooter games, HUD elements that follow the player's movement and remain visible in their field of view use the _Tag-Along_ pattern to ensure quick access to important game information without obstructing the player’s view of the game world.
 
 - **Design Applications**: In 3D design apps, the _Tag-Along_ pattern can be used for tool menus that are kept accessible but can also be moved or hidden to prevent cluttering the user’s workspace.
-
-## Event-Condition-Action Diagram
