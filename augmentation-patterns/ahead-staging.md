@@ -35,6 +35,10 @@ The orientation of the augmentation can be chosen among the following or any add
 - Gaming: Place game characters, objects or the playing field on a real-world surface.
 - Education: Place virtual objects in the real room to experience their size or to examine them in detail
 
-## Event-Condition-Action Diagram
-|:---:|:---:|:---:|:---:|
-| with object | geo-referenced | towards user | to environment |
+## ECA Diagram
+
+| on:command |  &rarr; | do:add ahead 0.0 0.0 -1.25 |
+|---|---|---|
+> 'nefertiti.sculpture' ➕
+
+In case of a right-handed coordinate system with y-axis going upwards, the z-axis is pointing towards the user. Therefore the staged object has to be placed with a negative distance to become visible infront of the user.
