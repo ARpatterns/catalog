@@ -27,7 +27,7 @@ __Augmentation Pattern__
   * _Aligned_: initial towards the user in view direction.
   * _Pivot_ {optional}: Objects in the local coordinate system are centered on the ground floor. If the object is rotated around the AR anchor in the world coordinate system, it turns by it's center up axis.
 
-## Diagram {optional but recommended}
+## ECA Diagram {optional but recommended}
 
 {Hint: Use [AR Patterns Diagram](https://github.com/ARpatterns/diagram) as a kind of pseudo code to document this AR scenario.}
 
