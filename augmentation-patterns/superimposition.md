@@ -18,7 +18,7 @@ In its pure form, the superimposition pattern excludes any object scanning, such
 * _Anchored_: on object
 * _Placed_: on object
 * _Aligned_: with object
-* _Camera_: Any
+* _Camera_: any
 
 ## Related Patterns
 
@@ -38,4 +38,3 @@ If image segmentation is used instead of tags, ensuring robust object recognitio
 - Games in which real-world tags are used to bring in game objects into play.
 - Shopping apps may use this pattern for virtual-try on scenarios, where users may wish to see if a piece of clothing fits them before buying.
 
-## Event-Condition-Action Diagram
