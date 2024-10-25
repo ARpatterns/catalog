@@ -14,3 +14,6 @@ You have some examples of AR patterns in use which you want to share as open sou
 
 # Share
 To grow the community, we need you to spread the word! Do you know someone who might be interested in this catalog or have some expertise to contribute, then please share the link to this https://arpatterns.dev community.
+
+# Initial and Current Contributions
+See [acknowledgments](https://github.com/ARpatterns#acknowledgements) to see what contributors are or have been working on.
