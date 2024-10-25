@@ -18,7 +18,7 @@ The enrichment is typically aware of the segment's spacial orientation, and uses
 * _Anchored_: Not applicable
 * _Placed_: on image segment
 * _Aligned_: any, but often oriented towards user
-* _Camera: Any
+* _Camera_: Any
 
 ## Related Patterns
 
@@ -34,7 +34,3 @@ The Area Enrichment Pattern uses detected image segments to calculate the spatia
 
 - Video Conferencing: Virtual Backgrounds
 - Video or Photo Effects: Changing scene reality, and combining it with other patterns such as Superimposition, Staged Progression or Ahead Staging.
-
-## Event-Condition-Action Diagram
-
--
