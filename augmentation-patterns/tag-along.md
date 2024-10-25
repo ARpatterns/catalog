@@ -23,10 +23,10 @@ We differentiate between two types of movement constraints:
 
 _Tag-Along_ augmentations are not used in every scenario where something moves with the user. For example, a virtual dog walking beside the user is better suited for the [**Ahead Staging Pattern**](ahead-staging.md) and [**Captured Twin Pattern**](captured-twin.md), as the virtual dog adjusts to environmental features (ground, walls, etc.) and is anchored in the scene, not to the user.
 
-- **_Anchored_**: On the user
-- **_Placed_**: Constraint ahead of the user
-- **_Aligned_**: Facing toward the user
-- **_Camera_**: Rear-facing
+- **_Anchored_**: on user
+- **_Placed_**: constraint ahead of the user
+- **_Aligned_**: facing toward the user
+- **_Camera_**: rear-facing
 
 ## Related Patterns
 
