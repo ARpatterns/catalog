@@ -18,7 +18,7 @@ It is recommended to prompt users to move their device in order to scan the envi
 * _Anchored_: any world anchor
 * _Placed_: initially ahead of user
 * _Aligned_: no impact
-* _Camera_: Rear
+* _Camera_: rear
 
 ## Related Patterns
 - [**Attention Director Pattern:**](attention-director.md) The attention director pattern is used to draw attention to a specific area in the AR scene. It is often combined with the Ahead Staging pattern.
