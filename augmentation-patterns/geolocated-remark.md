@@ -12,8 +12,8 @@ The _Geolocated Remark_ pattern is about placing AR augmentations at locations d
 
 ## Requirements
 
-* _Anchored_: On GPS location
-* _Placed_: On GPS location, often paired with _Attention Director_ pattern to help users identify their own relative position.
+* _Anchored_: on GPS location
+* _Placed_: on GPS location, often paired with _Attention Director_ pattern to help users identify their own relative position.
 * _Aligned_: N/A or towards user
 
 
@@ -31,6 +31,3 @@ Often however, geolocated remark patterns exist to provide better usability, for
 ## Scenarios and Examples
 - Gaming: 
 
-## Event-Condition-Action Diagram
-
-A geolocated remark is a rule that is triggered by GPS location data (latitude and longitude) or by address data (i.e., country, city, street, building name).
