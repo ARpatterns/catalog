@@ -4,6 +4,8 @@ A reaction of a rule can trigger a new event that invokes subsequent rules. In t
 
 Active rules are processed asynchronously to avoid coordination and waiting. Coupling of data and visuals or audio can be achieved by observing state changes.
 
+## ECA Diagram
+
 | on:command	| →	| do:assign |
 |---|---|---|
 > `data.flag = 1`
