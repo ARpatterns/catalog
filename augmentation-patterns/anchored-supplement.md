@@ -39,11 +39,6 @@ In this pattern, issues can arise from the imprecise or ambiguous recognition of
 - Museums: Provide contextual information about exhibit or artist
 - Manufacturing: Guide product assembly with augmented support information
 
-## Event-Condition-Action Diagram
-| placed: _relative to object_ | aligned: _with object or towards object / user_ |
-|---|---|
-
-## Additional Illustrations
 
 
 
