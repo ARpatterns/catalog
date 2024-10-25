@@ -10,7 +10,7 @@ Text decription of AR scenario ...
 * _Device Type_: handheld | headmounted
 * _Vision System_: world camera | mirrored face camera 
 
-![screen or video](screen.jpg_or_anim.gif)
+![screen or video](screen.jpg) {Hint: screen shot or animated gif}
 
 ## AR Patterns
 
