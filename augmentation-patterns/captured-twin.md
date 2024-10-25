@@ -18,10 +18,10 @@ The Captured Twin pattern applies whenever a model of the real world is captured
 - **As an augmentation**: A point cloud or derived 3D model that can be used in conjunction with patterns like the Ahead Staging Pattern, the Superimposition Pattern, or other applicable patterns.
 * **As an invisible object for occlusion or collision**: Invisible objects enable more realistic interactions within the AR scene, such as occlusion (blocking the view of virtual objects behind real ones) and collision detection. These interactions can improve the visual credibility of augmented elements by ensuring they behave as if they are part of the real world.
 
-- _Anchored_: To an object or in the world.
-- _Placed_: Initially on the object.
-- _Aligned_: Initially with the object.
-- _Camera_: Typically rear-facing.
+- _Anchored_: to an object or in the world.
+- _Placed_: initially on the object.
+- _Aligned_: initially with the object.
+- _Camera_: typically rear-facing.
 
 ## Related Patterns
 - [**Superimposition Pattern**](superimposition.md): If the captured twin is rendered above the real object, it can also be considered an instance of the _Superimposition Pattern_. However, while the _Superimposition Pattern_ focuses on covering up a detected object or segment with virtual content, the _Captured Twin pattern_ is primarily about capturing real-world objects to use the collected data in the AR scene.
