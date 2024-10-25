@@ -22,7 +22,7 @@ The anchored supplement pattern requires that the detected entity remain visible
 * _Anchored_: any detected object or tag.
 * _Placed_: relative to object
 * _Aligned_: normally user facing or relative to object
-* _Camera_: Generally rear, front also possible
+* _Camera_: generally rear, front also possible
 
 ## Related Patterns
 - [**Segment Overlay Pattern:**](segment-overlay.md) When the entity originates from camera image segmentation rather than than the detection of an entity, the segment overlay pattern applies. For example, detecting an image segment as the sky, and then recoloring with AR 
