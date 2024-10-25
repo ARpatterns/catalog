@@ -16,10 +16,10 @@ The attention director pattern applies whenever there is a directional indicator
 For example, if an AR augmentation to the right of the smartphone screen's current, the attention director must be able to understand the relative positioning, even if the user's position or the phone's orientation change. Therefore, spacial and rotational awareness is a prerequisite for the pattern to work.
 In addition, the directional indicator must initially be placed in ahead of the user in order to be visible. It may then move with the screen (similar to the [Tag Along Pattern](tag-along.md)) or stay in place with a world-locked anchor (Such as in the [Ahead Staging Pattern](ahead-staging.md). However, in the context of this pattern it does not matter if the directional indicator is positioned as a UI element in 2D, as a fake-3D billboard or as a 3D object. 
 
-* _Anchored_: Screen-space or not applicable
+* _Anchored_: screen-space or not applicable
 * _Placed_: initially ahead of user
 * _Aligned_: pointing towards point of interest
-* _Camera_: Typically rear
+* _Camera_: typically rear
 
 ## Related Patterns
 
@@ -41,4 +41,3 @@ Depending on the use case, world tracking or GPS tracking may be better suited.
 ## Scenarios and Examples
 * Navigation: Navigation apps in general are primary uses of this pattern, being able to overlay directional information over the real world, such as in car headboards, phone navigation apps or logistics (picker navigation)
 
-## Event-Condition-Action Diagram
