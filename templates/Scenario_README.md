@@ -29,7 +29,7 @@ __Augmentation Pattern__
 
 ## ECA Diagram {optional but recommended}
 
-{Hint: Use [AR Patterns Diagram](https://github.com/ARpatterns/diagram) as a kind of pseudo code to document this AR scenario.}
+{Hint: Use [ECA Diagram](https://github.com/ARpatterns/diagram) as a kind of pseudo code to document this AR scenario.}
 
  | on:start |  &rarr; | do:add ahead 0 0 -1.2 |
  |---|---|---|
