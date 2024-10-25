@@ -15,10 +15,10 @@ Area Enrichment is a technique which may be encountered in any context where ble
 The area enrichment pattern requires an image segment (_area_) that can be augmented with AR content (_enrichment_). 
 The enrichment is typically aware of the segment's spacial orientation, and uses it to populate the calculated space with virtual items.
 
-* _Anchored_: Not applicable
+* _Anchored_: not applicable
 * _Placed_: on image segment
 * _Aligned_: any, but often oriented towards user
-* _Camera_: Any
+* _Camera_: any
 
 ## Related Patterns
 
