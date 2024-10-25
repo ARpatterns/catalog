@@ -36,6 +36,3 @@ In most applications, the _Captured Twin pattern_ requires a high level of preci
 - **Gaming**: Mixed Reality (XR) games that combine virtual and real worlds can benefit from the Captured Twin pattern, using invisible twins for better occlusion and lighting effects.
 - **Mixed-Reality Headsets**: In any mixed-reality application, the credibility of augmented experiences in the camera pass-through is enhanced by using captured twins to simulate realistic interactions.
 
-## Event-Condition-Action Diagram
-
--
