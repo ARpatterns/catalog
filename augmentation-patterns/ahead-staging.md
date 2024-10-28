@@ -17,7 +17,7 @@ It is recommended to prompt users to move their device in order to scan the envi
 
 * _Anchored_: any world anchor
 * _Placed_: initially ahead of user
-* _Aligned_: no impact
+* _Aligned_: often towards user
 * _Camera_: rear
 
 ## Related Patterns
